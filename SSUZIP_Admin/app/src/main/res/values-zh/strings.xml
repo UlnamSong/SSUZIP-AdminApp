@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">SSU:ZIP 管理员</string>
+
+    <!-- Typeface Path -->
+    <string name="typeface_normal">fonts/samsung_sans.ttf</string>
+    <string name="typeface_bold">fonts/samsung_sans.ttf</string>
+    <string name="typeface_exbold">fonts/samsung_sans.ttf</string>
+    <string name="typeface_loginbot">fonts/NanumSquareOTFRegular.otf</string>
+
+    <!-- Dialog -->
+    <string name="dialog_ok">确认</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_yes">是</string>
+    <string name="dialog_no">没有</string>
+
+    <!-- Application Dialog -->
+    <string name="dialog_appexit_title">退出应用程序</string>
+    <string name="dialog_appexit_content">你确定要退出？</string>
+
+    <!-- Login Activity -->
+    <string name="login_email">电子邮件</string>
+    <string name="login_emailhint">请输入您的电子邮件。</string>
+    <string name="login_password">密码</string>
+    <string name="login_passwordhint">请输入您的密码。</string>
+    <string name="login_loginbutton">注册</string>
+    <string name="login_signupbutton">没有一个管理员帐户？</string>
+
+    <!-- Login Activity Dialog -->
+    <string name="login_dialog_email_input_title">输入您的电子邮件</string>
+    <string name="login_dialog_email_input_content">请输入您的电子邮件。</string>
+    <string name="login_dialog_email_format_title">电子邮件格式</string>
+    <string name="login_dialog_email_format_content">不是电子邮件格式。</string>
+    <string name="login_dialog_password_input_title">密码</string>
+    <string name="login_dialog_password_input_content">请输入您的密码。</string>
+
+    <!-- Signup Activity -->
+    <string name="signup_title">经理注册</string>
+    <string name="signup_email">电子邮件</string>
+    <string name="signup_emailhint">请输入您的电子邮件。</string>
+    <string name="signup_password">密码</string>
+    <string name="signup_passwordhint">请输入您的密码。</string>
+    <string name="signup_passwordconfirm">确认密码</string>
+    <string name="signup_passwordconfirmhint">再次输入您的密码。</string>
+    <string name="signup_name">NAME</string>
+    <string name="signup_namehint">Enter your name.</string>
+    <string name="signup_gender">SEX</string>
+    <string name="signup_gender_man">MALE</string>
+    <string name="signup_gender_woman">FEMALE</string>
+    <string name="signup_studentnumber">STUDENT ID</string>
+    <string name="signup_studentnumberhint">Enter your student id.</string>
+    <string name="signup_major">MAJOR</string>
+    <string name="signup_continuebutton">CONTINUE</string>
+
+    <!-- Signup Activity Dialog -->
+    <string name="signup_dialog_emailinput_title">Email Input</string>
+    <string name="signup_dialog_emailinput_content">Enter your email.</string>
+
+    <string name="signup_dialog_password_title">Password Input</string>
+    <string name="signup_dialog_password_content">Enter your password.</string>
+
+    <string name="signup_dialog_passwordconfirm_title">Password Confirm Input</string>
+    <string name="signup_dialog_passwordconfirm_content">Enter your password again.</string>
+
+    <string name="signup_dialog_password_error_title">Password Not Match</string>
+    <string name="signup_dialog_password_error_content">Passwords do not match.</string>
+
+    <string name="signup_dialog_name_title">Name Input</string>
+    <string name="signup_dialog_name_content">Enter your name.</string>
+
+    <string name="signup_dialog_studentnumber_title">Student ID Input</string>
+    <string name="signup_dialog_studentnumber_content">Enter your student id.</string>
+
+    <string name="signup_dialog_emailformat_title">Email Format</string>
+    <string name="signup_dialog_emailformat_content">This is not an email format.</string>
+
+    <string name="signup_dialog_gender_title">Sex Selection</string>
+    <string name="signup_dialog_gender_content">Select your sex.</string>
+
+    <!-- Authentication Activity -->
+    <string name="auth_title">Verification</string>
+    <string name="auth_contenttop">This app is an application that requires</string>
+    <string name="auth_contentmid">user authentication from the operator.</string>
+    <string name="auth_contentbot">Enter the code you have been issued for verification.</string>
+    <string name="auth_accountcode">ACCOUNT CODE</string>
+    <string name="auth_accountcodehint">Enter your account code.</string>
+    <string name="auth_authcode">VERIFICATION CODE</string>
+    <string name="auth_authcodehint">Enter your verification code.</string>
+
+    <!-- Authentication Activity Dialog -->
+    <string name="authentication_dialog_accountcode_title">Account Code Input</string>
+    <string name="authentication_dialog_accountcode_content">Enter your account code.</string>
+
+    <string name="authentication_dialog_authcode_title">Verification Code Input</string>
+    <string name="authentication_dialog_authcode_content">Enter your verification code.</string>
+
+    <string name="authentication_dialog_accountcode_error_title">Account Code Error</string>
+    <string name="authentication_dialog_accountcode_error_content">Account Code is not valid.</string>
+
+    <string name="authentication_dialog_authcode_error_title">Verification Code Error</string>
+    <string name="authentication_dialog_authcode_error_content">Verification Code is not valid.</string>
+
+</resources>

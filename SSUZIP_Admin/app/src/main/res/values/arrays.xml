@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="major_list">
+        <item>Computer Science</item>
+        <item>Software</item>
+        <item>Global Media</item>
+        <item>Electronic Engineering</item>
+        <item>Smart System Software</item>
+        <item>Chemical Engineering</item>
+        <item>Organic Advanced Materials Fiber Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Industrial Information System Engineering</item>
+        <item>Architecture</item>
+        <item>Business Administration</item>
+        <item>Entrepreneurship, Small Business</item>
+        <item>Accountancy</item>
+        <item>Venture Management</item>
+        <item>Finance</item>
+        <item>Economics</item>
+        <item>Global Commercial</item>
+        <item>Financial Economics</item>
+        <item>International Trade</item>
+        <item>Social Welfare</item>
+        <item>Public Administration</item>
+        <item>Political Science and Diplomacy</item>
+        <item>Information Sociology</item>
+        <item>Media and Public Relations</item>
+        <item>Lifelong Education</item>
+        <item>Law</item>
+        <item>International Law</item>
+        <item>Mathematics</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Statistics and Actuarial science</item>
+        <item>Systems Biomedical Science</item>
+        <item>Christian Studies</item>
+        <item>Korean language and literature</item>
+        <item>American language and literature</item>
+        <item>German language and literature</item>
+        <item>French Language and Literature</item>
+        <item>Chinese Language and Literature</item>
+        <item>Japanese Language and Literature</item>
+        <item>Philosophy</item>
+        <item>History</item>
+    </string-array>
+</resources>
