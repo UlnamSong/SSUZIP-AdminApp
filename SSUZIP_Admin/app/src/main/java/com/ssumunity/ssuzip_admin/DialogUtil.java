@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -22,7 +23,7 @@ public class DialogUtil {
 
         activity = (Activity) mContext;
 
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(mContext);
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(mContext, AlertDialog.THEME_HOLO_LIGHT);
         TypefaceUtil.loadTypeface(mContext);
 
         LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -52,6 +53,8 @@ public class DialogUtil {
                             case 2:
                                 // SignupActivity & AuthenticationActivity
                                 break;
+                            case 3:
+                                break;
                         }
                         dialog.cancel(); // Your custom code
                     }
@@ -72,6 +75,12 @@ public class DialogUtil {
                                 break;
                             case 2:
                                 // SignupActivity & AuthenticationActivity
+                                break;
+                            case 3:
+                                // MainActivity
+                                activity.startActivity(new Intent(activity, LoginActivity.class));
+                                activity.overridePendingTransition(R.anim.fade, R.anim.hold);
+                                activity.finish();
                                 break;
                         }
                         dialog.cancel(); // Your custom code

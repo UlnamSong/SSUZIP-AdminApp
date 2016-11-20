@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ssumunity.ssuzip_admin.MainActivity"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/main_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:layout_height="85dp"
+        android:layout_marginTop="85dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/person_icon"
+            android:id="@+id/imageView4"
+            android:src="@drawable/person_icon"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:text="Jackson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_profile_name"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="#FF404040"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:text="Computer Science"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_profile_major"
+            android:gravity="center_horizontal"
+            android:textColor="#FF707070"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:text="20141234"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_profile_studentid"
+            android:gravity="center_horizontal"
+            android:textColor="#FF707070"
+            android:layout_marginTop="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:text="@string/main_curevent_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_cur_text"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#FF707070" />
+
+            <TextView
+                android:text="7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_cur_event"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:text="@string/main_totevent_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_tot_event"
+                android:layout_weight="1"
+                android:textColor="#FF707070"
+                android:layout_marginLeft="3dp" />
+        </LinearLayout>
+
+        <Button
+            android:text="@string/main_admin_event_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_event_btn"
+            android:background="@drawable/main_button_bg"
+            android:drawableLeft="@drawable/plus"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="35dp"
+            android:textColor="#FF505050"
+            android:textSize="16sp" />
+
+        <Button
+            android:text="@string/main_admin_setting_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_btn"
+            android:background="@drawable/main_button_bg"
+            android:drawableLeft="@drawable/set"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="38dp"
+            android:textColor="#FF505050"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

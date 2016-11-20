@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="major_list">
-        <item>컴퓨터학부</item>
-        <item>소프트웨어학부</item>
-        <item>글로벌미디어학부</item>
-        <item>전자정보공학부</item>
-        <item>스마트시스템소프트웨어학과</item>
-        <item>화학공학과</item>
-        <item>유기신소재파이버공학과</item>
-        <item>전기공학부</item>
-        <item>기계공학과</item>
-        <item>산업정보시스템공학과</item>
-        <item>건축학부</item>
-        <item>경영학부</item>
-        <item>벤처중소기업학과</item>
-        <item>회계학과</item>
-        <item>벤처경영학과</item>
-        <item>금융학부</item>
-        <item>경제학과</item>
-        <item>글로벌통상학과</item>
-        <item>금융경제학과</item>
-        <item>국제무역학과</item>
-        <item>사회복지학부</item>
-        <item>행정학부</item>
-        <item>정치외교학과</item>
-        <item>정보사회학과</item>
-        <item>언론홍보학과</item>
-        <item>평생교육학과</item>
-        <item>법학과</item>
-        <item>국제법무학과</item>
-        <item>수학과</item>
-        <item>물리학과</item>
-        <item>화학과</item>
-        <item>정보통계보험수리학과</item>
-        <item>의생명시스템학부</item>
         <item>기독교학과</item>
         <item>국어국문학과</item>
         <item>영어영문학과</item>
@@ -43,5 +10,41 @@
         <item>일어일문학과</item>
         <item>철학과</item>
         <item>사학과</item>
+        <item>수학과</item>
+        <item>물리학과</item>
+        <item>화학과</item>
+        <item>정보통계보험수리학과</item>
+        <item>의생명시스템학부</item>
+        <item>법학과</item>
+        <item>국제법무학과</item>
+        <item>사회복지학부</item>
+        <item>행정학부</item>
+        <item>정치외교학과</item>
+        <item>정보사회학과</item>
+        <item>언론홍보학과</item>
+        <item>평생교육학과</item>
+        <item>경제학과</item>
+        <item>글로벌통상학과</item>
+        <item>금융경제학과</item>
+        <item>국제무역학과</item>
+        <item>경영학부</item>
+        <item>벤처중소기업학과</item>
+        <item>회계학과</item>
+        <item>벤처경영학과</item>
+        <item>금융학부</item>
+        <item>화학공학과</item>
+        <item>유기신소재파이버공학과</item>
+        <item>전기공학부</item>
+        <item>기계공학과</item>
+        <item>산업정보시스템공학과</item>
+        <item>건축학부</item>
+        <item>컴퓨터학부</item>
+        <item>전자정보공학부</item>
+        <item>글로벌미디어학부</item>
+        <item>소프트웨어학부</item>
+        <item>스마트시스템소프트웨어학과</item>
+        <item>미디어경영학과</item>
+        <item>예술창작학부</item>
+        <item>스포츠학부</item>
     </string-array>
 </resources>

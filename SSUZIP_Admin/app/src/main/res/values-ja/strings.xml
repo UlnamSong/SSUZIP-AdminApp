@@ -7,6 +7,8 @@
     <string name="typeface_bold">fonts/sawarabi-gothic-medium.ttf</string>
     <string name="typeface_exbold">fonts/sawarabi-gothic-medium.ttf</string>
     <string name="typeface_loginbot">fonts/NanumSquareOTFRegular.otf</string>
+    <string name="typeface_number_normal">fonts/NanumSquareOTFRegular.otf</string>
+    <string name="typeface_number_bold">fonts/NanumSquareOTFBold.otf</string>
 
     <!-- Dialog -->
     <string name="dialog_ok">確認</string>
@@ -27,77 +29,87 @@
     <string name="login_signupbutton">管理者アカウントがありませんか？</string>
 
     <!-- Login Activity Dialog -->
-    <string name="login_dialog_email_input_title">メール入力</string>
-    <string name="login_dialog_email_input_content">メールアドレスを入力してください。</string>
-    <string name="login_dialog_email_format_title">メールの形式</string>
-    <string name="login_dialog_email_format_content">メールの形式がありません。</string>
+    <string name="login_dialog_email_input_title">Eメール 入力</string>
+    <string name="login_dialog_email_input_content">Eメールアドレスを入力してください。</string>
+    <string name="login_dialog_email_format_title">Eメールの形式</string>
+    <string name="login_dialog_email_format_content">Eメールの形式がありません。</string>
     <string name="login_dialog_password_input_title">パスワード 入力</string>
     <string name="login_dialog_password_input_content">パスワードを入力してください。</string>
 
     <!-- Signup Activity -->
     <string name="signup_title">管理者登録</string>
-    <string name="signup_email">EMAIL</string>
-    <string name="signup_emailhint">Enter your email.</string>
-    <string name="signup_password">PASSWORD</string>
-    <string name="signup_passwordhint">Enter your password.</string>
-    <string name="signup_passwordconfirm">PASSWORD CONFIRM</string>
-    <string name="signup_passwordconfirmhint">Enter your password again.</string>
-    <string name="signup_name">NAME</string>
-    <string name="signup_namehint">Enter your name.</string>
+    <string name="signup_email">Eメール</string>
+    <string name="signup_emailhint">Eメールを入力してください。</string>
+    <string name="signup_password">パスワード</string>
+    <string name="signup_passwordhint">パスワードを入力してください。</string>
+    <string name="signup_passwordconfirm">パスワード 確認</string>
+    <string name="signup_passwordconfirmhint">パスワードを再入力してください。</string>
+    <string name="signup_name">名前</string>
+    <string name="signup_namehint">名前を入力してください。</string>
     <string name="signup_gender">性別</string>
     <string name="signup_gender_man">男</string>
     <string name="signup_gender_woman">女</string>
-    <string name="signup_studentnumber">STUDENT ID</string>
-    <string name="signup_studentnumberhint">Enter your student id.</string>
-    <string name="signup_major">MAJOR</string>
-    <string name="signup_continuebutton">CONTINUE</string>
+    <string name="signup_studentnumber">学籍番号</string>
+    <string name="signup_studentnumberhint">学籍番号を入力してください。</string>
+    <string name="signup_major">専攻</string>
+    <string name="signup_continuebutton">続行する</string>
 
     <!-- Signup Activity Dialog -->
-    <string name="signup_dialog_emailinput_title">Email Input</string>
-    <string name="signup_dialog_emailinput_content">Enter your email.</string>
+    <string name="signup_dialog_emailinput_title">Eメール入力</string>
+    <string name="signup_dialog_emailinput_content">Eメールを入力してください。</string>
 
-    <string name="signup_dialog_password_title">Password Input</string>
-    <string name="signup_dialog_password_content">Enter your password.</string>
+    <string name="signup_dialog_password_title">パスワード入力</string>
+    <string name="signup_dialog_password_content">パスワードを入力してください。</string>
 
-    <string name="signup_dialog_passwordconfirm_title">Password Confirm Input</string>
-    <string name="signup_dialog_passwordconfirm_content">Enter your password again.</string>
+    <string name="signup_dialog_passwordconfirm_title">パスワード確認入力</string>
+    <string name="signup_dialog_passwordconfirm_content">パスワードを再入力してください。</string>
 
-    <string name="signup_dialog_password_error_title">Password Not Match</string>
-    <string name="signup_dialog_password_error_content">Passwords do not match.</string>
+    <string name="signup_dialog_password_error_title">パスワード不一致</string>
+    <string name="signup_dialog_password_error_content">パスワードが一致しません。</string>
 
-    <string name="signup_dialog_name_title">Name Input</string>
-    <string name="signup_dialog_name_content">Enter your name.</string>
+    <string name="signup_dialog_name_title">名前入力</string>
+    <string name="signup_dialog_name_content">名前を入力してください。</string>
 
-    <string name="signup_dialog_studentnumber_title">Student ID Input</string>
-    <string name="signup_dialog_studentnumber_content">Enter your student id.</string>
+    <string name="signup_dialog_studentnumber_title">学籍番号入力</string>
+    <string name="signup_dialog_studentnumber_content">学籍番号を入力してください。</string>
 
-    <string name="signup_dialog_emailformat_title">Email Format</string>
-    <string name="signup_dialog_emailformat_content">This is not an email format.</string>
+    <string name="signup_dialog_emailformat_title">Eメール形式</string>
+    <string name="signup_dialog_emailformat_content">Eメールの形式がありません。</string>
 
-    <string name="signup_dialog_gender_title">Sex Selection</string>
-    <string name="signup_dialog_gender_content">Select your sex.</string>
+    <string name="signup_dialog_gender_title">性別選択</string>
+    <string name="signup_dialog_gender_content">性別を選択してください。</string>
 
     <!-- Authentication Activity -->
-    <string name="auth_title">Verification</string>
-    <string name="auth_contenttop">This app is an application that requires</string>
-    <string name="auth_contentmid">user authentication from the operator.</string>
-    <string name="auth_contentbot">Enter the code you have been issued for verification.</string>
-    <string name="auth_accountcode">ACCOUNT CODE</string>
-    <string name="auth_accountcodehint">Enter your account code.</string>
-    <string name="auth_authcode">VERIFICATION CODE</string>
-    <string name="auth_authcodehint">Enter your verification code.</string>
+    <string name="auth_title">管理者認証</string>
+    <string name="auth_contenttop">本アプリは、オペレータから認証を</string>
+    <string name="auth_contentmid">受けなければなら使用することができます。</string>
+    <string name="auth_contentbot">認証のためにコードを入力してください。</string>
+    <string name="auth_accountcode">アカウント固有コード入力</string>
+    <string name="auth_accountcodehint">アカウントコードを入力してください。</string>
+    <string name="auth_authcode">確認コード入力</string>
+    <string name="auth_authcodehint">確認コードを入力してください。</string>
+    <string name="auth_signupbutton">認証して登録完了する</string>
 
     <!-- Authentication Activity Dialog -->
-    <string name="authentication_dialog_accountcode_title">Account Code Input</string>
-    <string name="authentication_dialog_accountcode_content">Enter your account code.</string>
+    <string name="authentication_dialog_accountcode_title">アカウントコード入力</string>
+    <string name="authentication_dialog_accountcode_content">アカウントコードを入力してください。</string>
 
-    <string name="authentication_dialog_authcode_title">Verification Code Input</string>
-    <string name="authentication_dialog_authcode_content">Enter your verification code.</string>
+    <string name="authentication_dialog_authcode_title">認証コード入力</string>
+    <string name="authentication_dialog_authcode_content">認証コードを入力してください。</string>
 
-    <string name="authentication_dialog_accountcode_error_title">Account Code Error</string>
-    <string name="authentication_dialog_accountcode_error_content">Account Code is not valid.</string>
+    <string name="authentication_dialog_accountcode_error_title">アカウントコードエラー</string>
+    <string name="authentication_dialog_accountcode_error_content">アカウントコードが無効です。</string>
 
-    <string name="authentication_dialog_authcode_error_title">Verification Code Error</string>
-    <string name="authentication_dialog_authcode_error_content">Verification Code is not valid.</string>
+    <string name="authentication_dialog_authcode_error_title">確認コードエラー</string>
+    <string name="authentication_dialog_authcode_error_content">確認コードは無効です。</string>
+
+    <!-- Main Activity -->
+    <string name="main_curevent_text">現在進行中のイベント : </string>
+    <string name="main_totevent_text">/10</string>
+    <string name="main_admin_event_button">イベント管理</string>
+    <string name="main_admin_setting_button">環境設定</string>
+
+    <string name="main_logout_dialog_title">ログアウト</string>
+    <string name="main_logout_dialog_content">ログアウトしますか？</string>
 
 </resources>

@@ -2,10 +2,12 @@
     <string name="app_name">SSU:ZIP 管理员</string>
 
     <!-- Typeface Path -->
-    <string name="typeface_normal">fonts/samsung_sans.ttf</string>
-    <string name="typeface_bold">fonts/samsung_sans.ttf</string>
-    <string name="typeface_exbold">fonts/samsung_sans.ttf</string>
+    <string name="typeface_normal">fonts/wt011.ttf</string>
+    <string name="typeface_bold">fonts/wt011.ttf</string>
+    <string name="typeface_exbold">fonts/wt011.ttf</string>
     <string name="typeface_loginbot">fonts/NanumSquareOTFRegular.otf</string>
+    <string name="typeface_number_normal">fonts/NanumSquareOTFRegular.otf</string>
+    <string name="typeface_number_bold">fonts/NanumSquareOTFBold.otf</string>
 
     <!-- Dialog -->
     <string name="dialog_ok">确认</string>
@@ -41,34 +43,34 @@
     <string name="signup_passwordhint">请输入您的密码。</string>
     <string name="signup_passwordconfirm">确认密码</string>
     <string name="signup_passwordconfirmhint">再次输入您的密码。</string>
-    <string name="signup_name">NAME</string>
-    <string name="signup_namehint">Enter your name.</string>
-    <string name="signup_gender">SEX</string>
-    <string name="signup_gender_man">MALE</string>
-    <string name="signup_gender_woman">FEMALE</string>
-    <string name="signup_studentnumber">STUDENT ID</string>
-    <string name="signup_studentnumberhint">Enter your student id.</string>
-    <string name="signup_major">MAJOR</string>
-    <string name="signup_continuebutton">CONTINUE</string>
+    <string name="signup_name">名</string>
+    <string name="signup_namehint">请输入您的姓名。</string>
+    <string name="signup_gender">性别</string>
+    <string name="signup_gender_man">男人</string>
+    <string name="signup_gender_woman">女人</string>
+    <string name="signup_studentnumber">学生证</string>
+    <string name="signup_studentnumberhint">请输入您的学生证。</string>
+    <string name="signup_major">特产</string>
+    <string name="signup_continuebutton">要继续</string>
 
     <!-- Signup Activity Dialog -->
     <string name="signup_dialog_emailinput_title">Email Input</string>
-    <string name="signup_dialog_emailinput_content">Enter your email.</string>
+    <string name="signup_dialog_emailinput_content">请输入您的电子邮件。</string>
 
     <string name="signup_dialog_password_title">Password Input</string>
-    <string name="signup_dialog_password_content">Enter your password.</string>
+    <string name="signup_dialog_password_content">请输入您的密码。</string>
 
     <string name="signup_dialog_passwordconfirm_title">Password Confirm Input</string>
-    <string name="signup_dialog_passwordconfirm_content">Enter your password again.</string>
+    <string name="signup_dialog_passwordconfirm_content">再次输入您的密码。</string>
 
     <string name="signup_dialog_password_error_title">Password Not Match</string>
     <string name="signup_dialog_password_error_content">Passwords do not match.</string>
 
     <string name="signup_dialog_name_title">Name Input</string>
-    <string name="signup_dialog_name_content">Enter your name.</string>
+    <string name="signup_dialog_name_content">请输入您的姓名。</string>
 
     <string name="signup_dialog_studentnumber_title">Student ID Input</string>
-    <string name="signup_dialog_studentnumber_content">Enter your student id.</string>
+    <string name="signup_dialog_studentnumber_content">请输入您的学生证。</string>
 
     <string name="signup_dialog_emailformat_title">Email Format</string>
     <string name="signup_dialog_emailformat_content">This is not an email format.</string>
@@ -85,6 +87,7 @@
     <string name="auth_accountcodehint">Enter your account code.</string>
     <string name="auth_authcode">VERIFICATION CODE</string>
     <string name="auth_authcodehint">Enter your verification code.</string>
+    <string name="auth_signupbutton">Authenticate and Signup</string>
 
     <!-- Authentication Activity Dialog -->
     <string name="authentication_dialog_accountcode_title">Account Code Input</string>
@@ -98,5 +101,14 @@
 
     <string name="authentication_dialog_authcode_error_title">Verification Code Error</string>
     <string name="authentication_dialog_authcode_error_content">Verification Code is not valid.</string>
+
+    <!-- Main Activity -->
+    <string name="main_curevent_text">现在发生的事 : </string>
+    <string name="main_totevent_text">/10</string>
+    <string name="main_admin_event_button">事件管理</string>
+    <string name="main_admin_setting_button">设置</string>
+
+    <string name="main_logout_dialog_title">登出</string>
+    <string name="main_logout_dialog_content">您要退出吗？</string>
 
 </resources>

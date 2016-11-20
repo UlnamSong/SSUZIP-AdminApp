@@ -28,7 +28,7 @@
             android:layout_height="70dp" />
 
         <TextView
-            android:text="본 앱은 운영자로부터 사용자 인증을"
+            android:text="@string/auth_contenttop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
@@ -36,7 +36,7 @@
             android:layout_marginTop="25dp" />
 
         <TextView
-            android:text="받아야 사용할 수 있는 어플리케이션입니다."
+            android:text="@string/auth_contentmid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView3"
@@ -44,7 +44,7 @@
             android:layout_marginTop="2dp" />
 
         <TextView
-            android:text="인증을 위해 발급 받은 코드를 입력해주세요."
+            android:text="@string/auth_contentbot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView4"
@@ -52,7 +52,7 @@
             android:layout_marginTop="15dp" />
 
         <TextView
-            android:text="계정 고유 코드 입력"
+            android:text="@string/auth_accountcode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_accountcode"
@@ -66,7 +66,7 @@
             android:id="@+id/et_accountcode"
             android:background="@drawable/edittext_borderwhite"
             android:paddingRight="10dp"
-            android:hint="계정 고유 코드를 입력해주세요."
+            android:hint="@string/auth_accountcodehint"
             android:paddingLeft="10dp"
             android:layout_marginTop="5dp"
             android:layout_height="40dp"
@@ -80,7 +80,7 @@
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="20dp"
             android:textSize="14sp"
-            android:text="인증코드 입력" />
+            android:text="@string/auth_authcode" />
 
         <EditText
             android:layout_width="match_parent"
@@ -90,7 +90,7 @@
             android:password="false"
             android:background="@drawable/edittext_borderwhite"
             android:paddingLeft="10dp"
-            android:hint="인증 코드를 입력해주세요."
+            android:hint="@string/auth_authcodehint"
             android:layout_marginTop="5dp"
             android:layout_height="40dp"
             android:textSize="16sp" />
@@ -98,7 +98,7 @@
     </LinearLayout>
 
     <Button
-        android:text="인증하고 가입 완료하기"
+        android:text="@string/auth_signupbutton"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:id="@+id/signup_button"

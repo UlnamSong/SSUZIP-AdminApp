@@ -1,47 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="major_list">
-        <item>コンピューターサイエンス</item>
-        <item>ソフトウェア学部</item>
-        <item>グローバルメディア学部</item>
-        <item>電子情報工学部</item>
-        <item>スマートシステムソフトウェア学科</item>
-        <item>化学工学</item>
-        <item>有機新素材ファイバー工学</item>
-        <item>電気工学部</item>
-        <item>機械工学科</item>
-        <item>産業情報システム工学科</item>
-        <item>建築学部</item>
-        <item>経営学部</item>
-        <item>ベンチャー中小企業学科</item>
-        <item>会計学科</item>
-        <item>ベンチャー経営学科</item>
-        <item>金融学部</item>
-        <item>経済学科</item>
-        <item>グローバル通商学と学科</item>
-        <item>金融経済学科</item>
-        <item>国際貿易部</item>
-        <item>社会福祉学部</item>
-        <item>行政学部</item>
-        <item>政治外交学科</item>
-        <item>情報社会学科</item>
-        <item>広報部</item>
-        <item>生涯教育学科</item>
-        <item>法学科</item>
-        <item>国際法務学部</item>
-        <item>数学科</item>
-        <item>物理学科</item>
-        <item>化学科</item>
-        <item>情報統計保険数理と学科</item>
-        <item>医生命システム学部</item>
         <item>クリスチャン学科</item>
         <item>国語国文学科</item>
         <item>英語英文学科</item>
         <item>ドクオドクムン学科</item>
         <item>フランス語フランス文学科</item>
         <item>中語中文学科</item>
-        <item>イルオイルムンハク学科</item>
+        <item>日語日文学科</item>
         <item>哲学科</item>
         <item>史学科</item>
+        <item>数学科</item>
+        <item>物理学科</item>
+        <item>化学科</item>
+        <item>情報統計保険数理学科</item>
+        <item>医生命システム学部</item>
+        <item>法学科</item>
+        <item>国際法務学科</item>
+        <item>社会福祉学部</item>
+        <item>行政学部</item>
+        <item>政治外交学科</item>
+        <item>情報社会学科</item>
+        <item>広報部</item>
+        <item>生涯教育学科</item>
+        <item>経済学科</item>
+        <item>グローバル通商学科</item>
+        <item>金融経済学科</item>
+        <item>国際貿易学科</item>
+        <item>経営学部</item>
+        <item>ベンチャー中小企業学科</item>
+        <item>会計学科</item>
+        <item>ベンチャー経営学科</item>
+        <item>金融学部</item>
+        <item>化学工学科</item>
+        <item>有機新素材ファイバー工学科</item>
+        <item>電気工学部</item>
+        <item>機械工学科</item>
+        <item>産業情報システム工学科</item>
+        <item>建築学部</item>
+        <item>コンピュータ学部</item>
+        <item>電子情報工学部</item>
+        <item>グローバルメディア学部</item>
+        <item>ソフトウェア学部</item>
+        <item>スマートシステムソフトウェア学科</item>
+        <item>メディア経営学科</item>
+        <item>芸術創作学部</item>
+        <item>スポーツ学部</item>
     </string-array>
 </resources>

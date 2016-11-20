@@ -6,6 +6,8 @@
     <string name="typeface_bold">fonts/NanumSquareOTFBold.otf</string>
     <string name="typeface_exbold">fonts/NanumSquareOTFExtraBold.otf</string>
     <string name="typeface_loginbot">fonts/NanumSquareOTFRegular.otf</string>
+    <string name="typeface_number_normal">fonts/NanumSquareOTFRegular.otf</string>
+    <string name="typeface_number_bold">fonts/NanumSquareOTFBold.otf</string>
 
     <!-- Dialog -->
     <string name="dialog_ok">OK</string>
@@ -85,6 +87,7 @@
     <string name="auth_accountcodehint">Enter your account code.</string>
     <string name="auth_authcode">VERIFICATION CODE</string>
     <string name="auth_authcodehint">Enter your verification code.</string>
+    <string name="auth_signupbutton">Authenticate and Signup</string>
 
     <!-- Authentication Activity Dialog -->
     <string name="authentication_dialog_accountcode_title">Account Code Input</string>
@@ -98,5 +101,14 @@
 
     <string name="authentication_dialog_authcode_error_title">Verification Code Error</string>
     <string name="authentication_dialog_authcode_error_content">Verification Code is not valid.</string>
-    
+
+    <!-- Main Activity -->
+    <string name="main_curevent_text">Current Events : </string>
+    <string name="main_totevent_text">/10</string>
+    <string name="main_admin_event_button">Manage Events</string>
+    <string name="main_admin_setting_button">Settings</string>
+
+    <string name="main_logout_dialog_title">Log Out</string>
+    <string name="main_logout_dialog_content">Do you want to logout?</string>
+
 </resources>

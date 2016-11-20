@@ -14,15 +14,22 @@ import java.util.List;
  */
 
 public class MySpinnerAdapter extends ArrayAdapter<String> {
-    // Initialise custom font, for example:
-    Typeface font = Typeface.createFromAsset(getContext().getAssets(),
-            "fonts/NanumSquareOTFBold.otf");
+
+    // Context
+    private Context mContext;
+
+    // Custom Font
+    private Typeface font = null;
 
     // (In reality I used a manager which caches the Typeface objects)
     // Typeface font = FontManager.getInstance().getFont(getContext(), BLAMBOT);
 
     public MySpinnerAdapter(Context context, int resource, List<String> items) {
         super(context, resource, items);
+        mContext = context;
+
+        TypefaceUtil.loadTypeface(mContext);
+        font = TypefaceUtil.typeface_m;
     }
 
     // Affects default (closed) state of the spinner

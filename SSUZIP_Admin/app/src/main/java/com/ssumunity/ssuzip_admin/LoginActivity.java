@@ -58,7 +58,11 @@ public class LoginActivity extends AppCompatActivity {
                 } else {
                     //Email Format Check
                     if (isValidEmail(etEmail.getText())) {
-                        DialogUtil.showDialog(LoginActivity.this, "로그인 버튼 눌림", "로그인 버튼이 눌렸습니다.", 1, 1);
+                        //Temporary Code
+                        //DialogUtil.showDialog(LoginActivity.this, "로그인 버튼 눌림", "로그인 버튼이 눌렸습니다.", 1, 1);
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                        overridePendingTransition(R.anim.fade, R.anim.hold);
+                        finish();
 
                         // Request Login Authentication to Server
 

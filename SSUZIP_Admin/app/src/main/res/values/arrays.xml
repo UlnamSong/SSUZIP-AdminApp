@@ -1,47 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="major_list">
-        <item>Computer Science</item>
-        <item>Software</item>
-        <item>Global Media</item>
-        <item>Electronic Engineering</item>
-        <item>Smart System Software</item>
-        <item>Chemical Engineering</item>
-        <item>Organic Advanced Materials Fiber Engineering</item>
-        <item>Electrical Engineering</item>
-        <item>Mechanical Engineering</item>
-        <item>Industrial Information System Engineering</item>
-        <item>Architecture</item>
-        <item>Business Administration</item>
-        <item>Entrepreneurship, Small Business</item>
-        <item>Accountancy</item>
-        <item>Venture Management</item>
-        <item>Finance</item>
-        <item>Economics</item>
-        <item>Global Commercial</item>
-        <item>Financial Economics</item>
-        <item>International Trade</item>
-        <item>Social Welfare</item>
-        <item>Public Administration</item>
-        <item>Political Science and Diplomacy</item>
-        <item>Information Sociology</item>
-        <item>Media and Public Relations</item>
-        <item>Lifelong Education</item>
-        <item>Law</item>
-        <item>International Law</item>
-        <item>Mathematics</item>
-        <item>Physics</item>
-        <item>Chemistry</item>
-        <item>Statistics and Actuarial science</item>
-        <item>Systems Biomedical Science</item>
         <item>Christian Studies</item>
-        <item>Korean language and literature</item>
-        <item>American language and literature</item>
-        <item>German language and literature</item>
+        <item>Korean Language and Literature</item>
+        <item>English Language and Literature</item>
+        <item>German Language and Literature</item>
         <item>French Language and Literature</item>
         <item>Chinese Language and Literature</item>
         <item>Japanese Language and Literature</item>
         <item>Philosophy</item>
         <item>History</item>
+        <item>Mathematics</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Statistics and Actuarial Science</item>
+        <item>Medical-biosystematics</item>
+        <item>Law</item>
+        <item>Global Law</item>
+        <item>Social Welfare</item>
+        <item>Public Administration</item>
+        <item>Political Science and International Relations</item>
+        <item>Information Sociology</item>
+        <item>Journalism, Public Relations, and Advertising</item>
+        <item>Lifelong Education</item>
+        <item>Economics</item>
+        <item>International Commerce</item>
+        <item>Ecofinance</item>
+        <item>International Trade and Transaction</item>
+        <item>Business Administration</item>
+        <item>Entrepreneurship and Small Business</item>
+        <item>Accounting</item>
+        <item>Venture Management</item>
+        <item>Finance</item>
+        <item>Chemical Engineering</item>
+        <item>Organic Materials and Fiber Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Industrial Information Systems Engineering</item>
+        <item>Architecture</item>
+        <item>Computer Science</item>
+        <item>Electronic Engineering</item>
+        <item>Global Media</item>
+        <item>Software</item>
+        <item>Smart System Software</item>
+        <item>Media and Management</item>
+        <item>Art and Design</item>
+        <item>Division of Sports</item>
     </string-array>
 </resources>

@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -38,7 +39,7 @@ public class AuthenticationActivity extends AppCompatActivity {
         TextView TextViewNewFont = new TextView(AuthenticationActivity.this);
         FrameLayout.LayoutParams layoutparams = new FrameLayout.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         TextViewNewFont.setLayoutParams(layoutparams);
-        TextViewNewFont.setText("관리자 인증");
+        TextViewNewFont.setText(getString(R.string.auth_title));
 
         TextViewNewFont.setTextColor(Color.WHITE);
         TextViewNewFont.setTextSize(18);
@@ -50,6 +51,21 @@ public class AuthenticationActivity extends AppCompatActivity {
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setCustomView(TextViewNewFont);
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        signupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(etAccountCode.getText().toString().equals("")) {
+                    DialogUtil.showDialog(AuthenticationActivity.this, getString(R.string.authentication_dialog_accountcode_title),
+                            getString(R.string.authentication_dialog_accountcode_content), 1, 2);
+                } else if(etAuthCode.getText().toString().equals("")) {
+                    DialogUtil.showDialog(AuthenticationActivity.this, getString(R.string.authentication_dialog_authcode_title),
+                            getString(R.string.authentication_dialog_authcode_content), 1, 2);
+                } else {
+                    // Request to Server.
+                }
+            }
+        });
 
 
     }

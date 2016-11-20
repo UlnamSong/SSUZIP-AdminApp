@@ -85,9 +85,9 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(accountValidation()) {
-                    Log.d(TAG, "onClick: userInfo : " + SignupUserData.userName + ", " + SignupUserData.userStudentNumber);
-                    Log.d(TAG, "onClick: userInfo : " + SignupUserData.userPassword + ", " + SignupUserData.userPasswordConfirm);
-                    Log.d(TAG, "onClick: userInfo : " + SignupUserData.userGender + ", " + SignupUserData.userMajor + ", " + SignupUserData.userEmail);
+                    //Log.d(TAG, "onClick: userInfo : " + SignupUserData.userName + ", " + SignupUserData.userStudentNumber);
+                    //Log.d(TAG, "onClick: userInfo : " + SignupUserData.userPassword + ", " + SignupUserData.userPasswordConfirm);
+                    //Log.d(TAG, "onClick: userInfo : " + SignupUserData.userGender + ", " + SignupUserData.userMajor + ", " + SignupUserData.userEmail);
 
                     startActivity(new Intent(SignupActivity.this, AuthenticationActivity.class));
                     overridePendingTransition(R.anim.fade, R.anim.hold);
