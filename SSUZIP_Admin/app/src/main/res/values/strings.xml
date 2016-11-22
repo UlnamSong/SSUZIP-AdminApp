@@ -111,4 +111,25 @@
     <string name="main_logout_dialog_title">Log Out</string>
     <string name="main_logout_dialog_content">Do you want to logout?</string>
 
+
+    <!-- Event List Activity -->
+    <string name="event_actionbar_title">Manage Events</string>
+    <string name="event_list_text">Event List</string>
+    <string name="event_curevent_text">Current Events : </string>
+    <string name="event_totevent_text">Total Events : </string>
+    <string name="event_addevent_button">Create Event</string>
+
+    <string name="event_detail_button">Details</string>
+    <string name="event_result_button">Result</string>
+    <string name="event_inwon_text">Person : </string>
+    <string name="event_participate_text">Current : </string>
+    <string name="event_myung"></string>
+
+    <string name="event_year_text"></string>
+
+    <!-- List 하단 범례 모음-->
+    <string name="event_list_now_text"> : OnGoing</string>
+    <string name="event_list_nearend_text"> : Near Deadline</string>
+    <string name="event_list_end_text"> : Closed</string>
+
 </resources>

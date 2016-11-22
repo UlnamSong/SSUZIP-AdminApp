@@ -110,5 +110,25 @@
 
     <string name="main_logout_dialog_title">로그아웃</string>
     <string name="main_logout_dialog_content">로그아웃하시겠습니까?</string>
+    
+    <!-- Event List Activity -->
+    <string name="event_actionbar_title">이벤트 관리하기</string>
+    <string name="event_list_text">이벤트 목록</string>
+    <string name="event_curevent_text">진행중인 이벤트 : </string>
+    <string name="event_totevent_text">전체 이벤트 수 : </string>
+    <string name="event_addevent_button">이벤트 생성</string>
+    
+    <string name="event_detail_button">상세</string>
+    <string name="event_result_button">결과</string>
+    <string name="event_inwon_text">인원 : </string>
+    <string name="event_participate_text">참여 : </string>
+    <string name="event_myung">명</string>
 
+    <string name="event_year_text">년</string>
+
+    <!-- List 하단 범례 모음-->
+    <string name="event_list_now_text"> : 진행중</string>
+    <string name="event_list_nearend_text"> : 마감 임박</string>
+    <string name="event_list_end_text"> : 마감</string>
+    
 </resources>

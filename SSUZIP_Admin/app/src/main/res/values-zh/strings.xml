@@ -111,4 +111,25 @@
     <string name="main_logout_dialog_title">登出</string>
     <string name="main_logout_dialog_content">您要退出吗？</string>
 
+
+    <!-- Event List Activity -->
+    <string name="event_actionbar_title">事件管理</string>
+    <string name="event_list_text">活动列表</string>
+    <string name="event_curevent_text">正在发生的事件 : </string>
+    <string name="event_totevent_text">总活动 : </string>
+    <string name="event_addevent_button">创建活动</string>
+
+    <string name="event_detail_button">更</string>
+    <string name="event_result_button">结果</string>
+    <string name="event_inwon_text">人员 : </string>
+    <string name="event_participate_text">参与 : </string>
+    <string name="event_myung"></string>
+
+    <string name="event_year_text">年</string>
+
+    <!-- List 하단 범례 모음-->
+    <string name="event_list_now_text"> : 进行</string>
+    <string name="event_list_nearend_text"> : 最后期限的临近</string>
+    <string name="event_list_end_text"> : 期限</string>
+
 </resources>

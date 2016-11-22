@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:paddingBottom="3dp"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:background="@drawable/list_item_bg"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:text="2016년"
+                android:layout_width="match_parent"
+                android:id="@+id/tvYear"
+                android:gravity="bottom"
+                android:textSize="11sp"
+                android:layout_height="14dp"
+                android:paddingLeft="2dp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:text="10/13"
+                android:layout_width="match_parent"
+                android:id="@+id/tvMonthDay"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="26dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:text="컴퓨터학부 이벤트"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvTitle"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="bottom"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:textColor="#FF505050" />
+
+            <TextView
+                android:text="인원 : 250명 (참여 : 75명)"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvPerson"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="top"
+                android:textSize="11sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.3">
+
+            <Button
+                android:text="DETAILS"
+                android:id="@+id/detail_result_button"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/details_button_bg"
+                android:textColor="@color/colorGrey70"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="35dp"
+                android:layout_width="60dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
