@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         adminEventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Event Admin", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, EventListActivity.class));
                 overridePendingTransition(R.anim.fade, R.anim.hold);
             }

@@ -1,21 +1,18 @@
 package com.ssumunity.ssuzip_admin;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -74,6 +71,7 @@ public class EventListActivity extends ActionBarActivity {
 
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setCustomView(TextViewNewFont);
+//      actionBar.setElevation(0);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         setContent();
@@ -86,6 +84,14 @@ public class EventListActivity extends ActionBarActivity {
 
         totEventcount.setText(totalCount + "");
         curEventcount.setText(currentCount + "");
+
+        createButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(EventListActivity.this, EventCreateActivity.class));
+                overridePendingTransition(R.anim.fade, R.anim.hold);
+            }
+        });
 
     }
 
@@ -114,7 +120,7 @@ public class EventListActivity extends ActionBarActivity {
         tvEnd = (TextView) findViewById(R.id.tv_end);
         tvEnd.setTypeface(TypefaceUtil.typeface);
 
-        createButton = (Button) findViewById(R.id.create_button);
+        createButton = (Button) findViewById(R.id.select_major_button);
         createButton.setTypeface(TypefaceUtil.typeface);
     }
 
@@ -151,7 +157,7 @@ public class EventListActivity extends ActionBarActivity {
     }
 
     private void generateDummyData() {
-        for (int i = 0; i < 6; ++i) {
+        for (int i = 0; i < 15; ++i) {
             EventData tempArr = new EventData();
 
             tempArr.year = "2016";
@@ -168,7 +174,7 @@ public class EventListActivity extends ActionBarActivity {
             } else {
                 tempArr.day = tempInt + "";
             }
-            tempArr.title = getString(R.string.event_actionbar_title) + (5 - i);
+            tempArr.title = getString(R.string.event_actionbar_title) + (14 - i);
 
             int temp = (int) (Math.random() * 300);
 

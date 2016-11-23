@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event_create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ssumunity.ssuzip_admin.EventCreateActivity"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:text="@string/event_create_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_title"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:id="@+id/et_title"
+                android:paddingRight="10dp"
+                android:hint="@string/event_create_title_hint"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:layout_weight="0"
+                android:background="@drawable/edittext_borderwhite" />
+
+            <TextView
+                android:text="@string/event_create_duedate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_duedate"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:id="@+id/tv_duedate_text"
+                    android:background="@drawable/edittext_borderwhite"
+                    android:paddingLeft="10dp"
+                    android:hint="@string/event_create_duedate_hint"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:elevation="0dp"
+                    android:gravity="center_vertical" />
+
+                <ImageButton
+                    app:srcCompat="@drawable/calendar_icon"
+                    android:id="@+id/ib_calendar"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/calendar_icon"
+                    android:layout_gravity="right|center_vertical"
+                    android:elevation="24dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="10dp"
+                    android:padding="3dp"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:text="@string/event_create_maxperson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_maxPerson"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:id="@+id/et_maxPerson"
+                android:background="@drawable/edittext_borderwhite"
+                android:paddingLeft="10dp"
+                android:hint="@string/event_create_maxperson_hint"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="@string/event_create_selectmajor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_major_button"
+        android:textColor="#FF000000"
+        android:textSize="14sp"
+        android:background="@drawable/main_button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

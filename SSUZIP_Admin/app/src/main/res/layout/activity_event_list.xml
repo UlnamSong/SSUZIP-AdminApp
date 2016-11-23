@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/textView5"
-        android:layout_above="@+id/create_button">
+        android:layout_above="@+id/select_major_button">
 
         <LinearLayout
             android:orientation="vertical"
@@ -46,7 +46,9 @@
                 android:layout_marginTop="5dp"
                 android:id="@+id/eventListview"
                 android:paddingLeft="2dp"
-                android:paddingRight="2dp" />
+                android:paddingRight="2dp"
+                android:dividerHeight="0dp"
+                android:divider="#00FFFFFF" />
 
         </LinearLayout>
 
@@ -183,7 +185,7 @@
         android:text="@string/event_addevent_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/create_button"
+        android:id="@+id/select_major_button"
         android:background="@drawable/main_button_bg"
         android:drawableLeft="@drawable/plus"
         android:paddingLeft="10dp"

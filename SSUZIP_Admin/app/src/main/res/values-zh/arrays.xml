@@ -47,4 +47,25 @@
         <item>创意艺术系</item>
         <item>运动系</item>
     </string-array>
+
+    <string-array name="building_list">
+        <item>베어드홀</item>
+        <item>경상관</item>
+        <item>문화관</item>
+        <item>안익태기념관</item>
+        <item>형남공학관</item>
+        <item>교육관</item>
+        <item>백마관</item>
+        <item>한경직기념관</item>
+        <item>신양관</item>
+        <item>벤처중소기업센터</item>
+        <item>진리관</item>
+        <item>조만식기념관</item>
+        <item>한국기독교박물관</item>
+        <item>중앙도서관</item>
+        <item>Residence Hall</item>
+        <item>전산관</item>
+        <item>미래관</item>
+        <item>정보과학관</item>
+    </string-array>
 </resources>

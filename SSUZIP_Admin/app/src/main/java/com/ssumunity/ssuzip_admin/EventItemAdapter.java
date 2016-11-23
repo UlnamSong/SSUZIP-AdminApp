@@ -100,11 +100,11 @@ public class EventItemAdapter extends ArrayAdapter<EventData> {
                 switch(datas[position].eventStatus) {
                     case "0":
                     case "1":
-                        Toast.makeText(myContext, "Details", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(myContext, "Details, Position : " + position, Toast.LENGTH_SHORT).show();
                         break;
                     
                     case "2":
-                        Toast.makeText(myContext, "Results", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(myContext, "Results, Position : " + position, Toast.LENGTH_SHORT).show();
                         break;
                 }
             }

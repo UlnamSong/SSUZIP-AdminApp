@@ -54,6 +54,7 @@ public class DialogUtil {
                                 // SignupActivity & AuthenticationActivity
                                 break;
                             case 3:
+                                // Event Create Activity & Event List Activity
                                 break;
                         }
                         dialog.cancel(); // Your custom code

@@ -25,7 +25,10 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".EventListActivity"></activity>
+        <activity android:name=".EventListActivity" />
+        <activity android:name=".EventCreateActivity" />
+        <activity android:name=".EventCreateTwoActivity" />
+        <activity android:name=".EventCreateThreeActivity"></activity>
     </application>
 
 </manifest>
