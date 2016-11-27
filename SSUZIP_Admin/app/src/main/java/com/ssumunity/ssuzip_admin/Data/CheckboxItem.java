@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Data;
 
 /**
  * Created by Ulnamsong on 2016. 11. 23..

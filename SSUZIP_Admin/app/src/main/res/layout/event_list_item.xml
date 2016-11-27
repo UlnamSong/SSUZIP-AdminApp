@@ -91,6 +91,7 @@
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_marginRight="13dp"
                 android:background="@drawable/details_button_bg"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:textColor="@color/colorGrey70"
                 android:textSize="14sp"
                 android:layout_marginLeft="8dp"

@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Model;
 
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;

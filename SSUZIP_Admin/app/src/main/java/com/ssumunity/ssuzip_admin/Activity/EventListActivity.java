@@ -1,12 +1,10 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -14,30 +12,30 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.ssumunity.ssuzip_admin.Data.EventData;
+import com.ssumunity.ssuzip_admin.Controller.EventItemAdapter;
+import com.ssumunity.ssuzip_admin.R;
+import com.ssumunity.ssuzip_admin.Model.TypefaceUtil;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import static android.content.ContentValues.TAG;
-
 public class EventListActivity extends ActionBarActivity {
 
-    //private EventData[] eventData = new EventData[6];
     private ArrayList<EventData> eventData = new ArrayList<>();
 
     private ListView listView = null;
     private ActionBar actionBar = null;
 
     private Button createButton = null;
+    private Button refreshButton = null;
 
     private TextView listTitle = null;
-
     private TextView totEventcount = null;
     private TextView curEventcount = null;
-
     private TextView totEventcountText = null;
     private TextView curEventcountText = null;
-
     private TextView tvNow = null;
     private TextView tvAlmost = null;
     private TextView tvEnd = null;
@@ -45,24 +43,21 @@ public class EventListActivity extends ActionBarActivity {
     private int totalCount = 6;
     private int currentCount = 3;
 
+    private EventItemAdapter itemAdapter;
+    private EventData[] eventArray;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TypefaceUtil.loadTypeface(EventListActivity.this);
         setContentView(R.layout.activity_event_list);
-
         actionBar = getSupportActionBar();
 
-        TextView TextViewNewFont = new TextView(EventListActivity.this);
+        final TextView TextViewNewFont = new TextView(EventListActivity.this);
         FrameLayout.LayoutParams layoutparams = new FrameLayout.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         TextViewNewFont.setLayoutParams(layoutparams);
         TextViewNewFont.setText(getString(R.string.event_actionbar_title));
-
-        // TextView Color
-        TextViewNewFont.setTextColor(Color.WHITE);
-
-        // TextView Gravity : 일단 비활성화 (Center Alignment가 안됨)
-        //TextViewNewFont.setGravity(Gravity.CENTER_HORIZONTAL);
+        TextViewNewFont.setTextColor(getResources().getColor(R.color.actionbar_text_color));
         TextViewNewFont.setTextSize(18);
 
         // Load Typeface font url String ExternalFontPath
@@ -71,15 +66,14 @@ public class EventListActivity extends ActionBarActivity {
 
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setCustomView(TextViewNewFont);
-//      actionBar.setElevation(0);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         setContent();
 
         this.generateDummyData();
-        //this.sortDummyData();
+        eventArray = eventData.toArray(new EventData[] { });
 
-        EventItemAdapter itemAdapter = new EventItemAdapter(this, R.layout.event_list_item, eventData.toArray(new EventData[] { }));
+        itemAdapter = new EventItemAdapter(this, R.layout.event_list_item, eventArray);
         listView.setAdapter(itemAdapter);
 
         totEventcount.setText(totalCount + "");
@@ -93,6 +87,26 @@ public class EventListActivity extends ActionBarActivity {
             }
         });
 
+        refreshButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                runOnUiThread(new Runnable(){
+                    @Override
+                    public void run() {
+                        loadListView();
+                    }
+                });
+            }
+        });
+
+    }
+
+    // ListView 새로고침하는 부분
+    private void loadListView() {
+        this.generateDummyData();
+        eventArray = eventData.toArray(new EventData[] { });
+        itemAdapter = new EventItemAdapter(this, R.layout.event_list_item, eventArray);
+        listView.setAdapter(itemAdapter);
     }
 
     private void setContent() {
@@ -122,10 +136,17 @@ public class EventListActivity extends ActionBarActivity {
 
         createButton = (Button) findViewById(R.id.select_major_button);
         createButton.setTypeface(TypefaceUtil.typeface);
+
+        refreshButton = (Button) findViewById(R.id.refresh_list_button);
+        refreshButton.setTypeface(TypefaceUtil.typeface);
     }
 
+    // 현재는 미사용 ( 데이터 정렬 기능 제공할 경우 사용 )
+    // 리스트 정렬 후 리스트 뷰 갱신
     private void sortDummyData() {
         Collections.sort(eventData, new NoAscCompare());
+        itemAdapter = new EventItemAdapter(this, R.layout.event_list_item, eventArray);
+        listView.setAdapter(itemAdapter);
     }
 
     static class NoAscCompare implements Comparator<EventData> {
@@ -153,10 +174,18 @@ public class EventListActivity extends ActionBarActivity {
                 }
             }
         }
-
     }
 
+    @Override
+    protected void onResume() {
+        loadListView();
+        super.onResume();
+    }
+
+    // 더미 데이터 수집하는 부분 : 추후 서버로부터 받은 데이터를 처리하
     private void generateDummyData() {
+        eventData.clear();
+
         for (int i = 0; i < 15; ++i) {
             EventData tempArr = new EventData();
 
@@ -181,16 +210,11 @@ public class EventListActivity extends ActionBarActivity {
             tempArr.totNumber = temp + "";
             tempArr.curNumber = (int) (Math.random() * temp) + "";
             tempArr.eventStatus = (int) (Math.random() * 3) + "";
-            //eventData[i] = tempArr;
+            tempArr.content = "BlaBlaBlaContent : " + (14 - i) + "\n";
             eventData.add(tempArr);
-            //Log.d(TAG, "generateDummyData : " + i + " : " + eventData[i].title);
-            for(int j = 0; j <= i; ++j) {
-                //Log.d(TAG, "generateDummyData2 : " + j + " : " + eventData[j].title);
-                Log.d(TAG, "generateDummyData2 : " + j + " : " + eventData.get(j).title);
-            }
+            //Log.d(TAG, "generateDummyData : " + i + " : " + eventData.get(i).title);
         }
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -200,7 +224,6 @@ public class EventListActivity extends ActionBarActivity {
                 finish();
                 return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

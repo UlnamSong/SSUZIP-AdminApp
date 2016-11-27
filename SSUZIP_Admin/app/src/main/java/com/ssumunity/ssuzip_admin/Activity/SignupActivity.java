@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Activity;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -7,19 +7,22 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.ssumunity.ssuzip_admin.Model.AsteriskPasswordTransformationMethod;
+import com.ssumunity.ssuzip_admin.Model.DialogUtil;
+import com.ssumunity.ssuzip_admin.Controller.MySpinnerAdapter;
+import com.ssumunity.ssuzip_admin.R;
+import com.ssumunity.ssuzip_admin.Data.SignupUserData;
+import com.ssumunity.ssuzip_admin.Model.TypefaceUtil;
 
 import java.util.Arrays;
 
@@ -67,7 +70,7 @@ public class SignupActivity extends AppCompatActivity {
         TextViewNewFont.setText(getString(R.string.signup_title));
 
         // TextView Color
-        TextViewNewFont.setTextColor(Color.WHITE);
+        TextViewNewFont.setTextColor(getResources().getColor(R.color.actionbar_text_color));
 
         // TextView Gravity : 일단 비활성화 (Center Alignment가 안됨)
         //TextViewNewFont.setGravity(Gravity.CENTER_HORIZONTAL);

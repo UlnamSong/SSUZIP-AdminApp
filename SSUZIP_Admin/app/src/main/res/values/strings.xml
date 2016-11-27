@@ -118,6 +118,8 @@
     <string name="event_curevent_text">Current Events : </string>
     <string name="event_totevent_text">Total Events : </string>
     <string name="event_addevent_button">Create Event</string>
+    <string name="event_refresh_button">Refresh List</string>
+    <string name="event_refresh_toast">List Refresh Executed.</string>
 
     <string name="event_detail_button">Details</string>
     <string name="event_result_button">Result</string>
@@ -133,21 +135,46 @@
     <string name="event_list_end_text"> : Closed</string>
 
     <!-- Create Event -->
-    <string name="event_create_actionbar_title">이벤트 생성</string>
-    <string name="event_create_title">이벤트 이름</string>
-    <string name="event_create_title_hint">이벤트 이름을 입력해주세요.</string>
-    <string name="event_create_duedate">마감일</string>
-    <string name="event_create_duedate_hint">마감일을 선택해주세요.</string>
-    <string name="event_create_maxperson">최대 인원</string>
-    <string name="event_create_maxperson_hint">인원 수를 입력해주세요. 예) 130</string>
-    <string name="event_create_participate">참가 대상</string>
-    <string name="event_create_building">건물 선택</string>
-    <string name="event_create_selectmajor">참가 대상 선택</string>
-    <string name="event_create_selectbuilding">대상 건물 선택</string>
-    <string name="event_create_button">이벤트 생성하기</string>
+    <string name="event_create_actionbar_title">Create Event</string>
+    <string name="event_create_title">Event Name</string>
+    <string name="event_create_title_hint">Enter your event name.</string>
+    <string name="event_create_duedate">Due Date</string>
+    <string name="event_create_duedate_hint">Select the due date.</string>
+    <string name="event_create_maxperson">Max Person</string>
+    <string name="event_create_maxperson_hint">Enter max number of people. Example) 130</string>
+    <string name="event_create_content">Event Explanation</string>
+    <string name="event_create_content_hint">Enter the event explanation.</string>
+    <string name="event_create_participate">Participants</string>
+    <string name="event_create_building">Building Selection</string>
+    <string name="event_create_selectmajor">Participants Selection</string>
+    <string name="event_create_selectbuilding">Building Selection</string>
+    <string name="event_create_button">Create Event</string>
 
-    <string name="event_create_year">년 </string>
-    <string name="event_create_month">월 </string>
-    <string name="event_create_day">일 </string>
+    <string name="event_create_year">. </string>
+    <string name="event_create_month">. </string>
+    <string name="event_create_day">. </string>
 
+    <string name="event_create_dialog_date_title">날짜 선택 오류</string>
+    <string name="event_create_dialog_date_content">오늘 날짜 이후의 날짜로 선택해주세요.</string>
+
+    <string name="event_now_creating">Saving...</string>
+    <string name="event_create_success">Event Created</string>
+
+    <!-- Event Create Dialog -->
+    <string name="event_create_dialog_title_title">Event Title</string>
+    <string name="event_create_dialog_title_content">Enter your event title.</string>
+    <string name="event_create_dialog_maxperson_title">Maximum Number of People</string>
+    <string name="event_create_dialog_maxperson_content">Enter the maximum number of people..</string>
+    <string name="event_create_dialog_content_title">Event Explanation</string>
+    <string name="event_create_dialog_content_content">Enter the event explanation.</string>
+
+    <string name="event_create_dialog_major_title">Select Majors</string>
+    <string name="event_create_dialog_major_content">Please select at least one major.</string>
+
+    <string name="event_create_dialog_building_title">Select Buildings</string>
+    <string name="event_create_dialog_building_content">Please select at least one building.</string>
+
+    <!-- Event Details -->
+    <string name="event_details_actionbar_title">Event Details</string>
+    <string name="event_details_endevent_button">이벤트 마감하기</string>
 </resources>

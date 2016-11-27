@@ -11,4 +11,7 @@
     <color name="colorGrey">#6E6E6E</color>
     <color name="colorGrey70">#707070</color>
     <color name="colorBlue">#1BB6E9</color>
+
+    <color name="my_statusbar_color">#707070</color>
+    <color name="actionbar_text_color">#ccf2ff</color>
 </resources>

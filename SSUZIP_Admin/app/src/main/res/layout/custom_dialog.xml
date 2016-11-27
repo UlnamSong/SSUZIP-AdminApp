@@ -25,6 +25,7 @@
         android:color="#FF000000"
         android:layout_below="@+id/tv_dialog_title"
         android:id="@+id/tv_dialog_content"
-        android:textSize="16dp" />
+        android:textSize="16dp"
+        android:paddingRight="20dp" />
 
 </RelativeLayout>

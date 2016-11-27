@@ -5,31 +5,33 @@
     android:id="@+id/activity_event_create"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ssumunity.ssuzip_admin.EventCreateActivity"
+    tools:context="com.ssumunity.ssuzip_admin.Activity.EventCreateActivity"
     android:background="@color/colorWhite">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+            android:paddingRight="5dp"
+            android:layout_above="@+id/select_major_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:text="@string/event_create_title"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:id="@+id/tv_title"
                 android:textColor="@color/colorPrimary"
                 android:layout_marginTop="15dp"
                 android:textSize="14sp"
-                android:layout_weight="1" />
+                android:layout_weight="3.2"
+                android:layout_height="20dp" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -38,27 +40,28 @@
                 android:paddingRight="10dp"
                 android:hint="@string/event_create_title_hint"
                 android:paddingLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
                 android:textSize="16sp"
                 android:inputType="textEmailAddress"
-                android:layout_weight="0"
-                android:background="@drawable/edittext_borderwhite" />
+                android:layout_weight="3.2"
+                android:background="@drawable/edittext_borderwhite"
+                android:layout_height="42dp" />
 
             <TextView
                 android:text="@string/event_create_duedate"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:id="@+id/tv_duedate"
                 android:textColor="@color/colorPrimary"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:textSize="14sp"
-                android:layout_weight="1" />
+                android:layout_weight="3.2"
+                android:layout_height="20dp" />
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:layout_height="45dp">
+                android:layout_weight="3.2"
+                android:layout_height="42dp"
+                android:layout_marginTop="3dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -93,13 +96,13 @@
             <TextView
                 android:text="@string/event_create_maxperson"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:id="@+id/tv_maxPerson"
                 android:textColor="@color/colorPrimary"
                 android:textSize="14sp"
-                android:layout_weight="1"
+                android:layout_weight="3.2"
                 android:gravity="center_vertical"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="10dp"
+                android:layout_height="20dp" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -108,25 +111,59 @@
                 android:background="@drawable/edittext_borderwhite"
                 android:paddingLeft="10dp"
                 android:hint="@string/event_create_maxperson_hint"
-                android:layout_height="40dp"
                 android:textSize="16sp"
-                android:layout_weight="1"
+                android:layout_weight="3.2"
                 android:inputType="number"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="3dp"
+                android:layout_height="42dp" />
+
+            <TextView
+                android:text="@string/event_create_content"
+                android:layout_width="match_parent"
+                android:id="@+id/tvContent"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_weight="3.2"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:id="@+id/etContent"
+                android:background="@drawable/edittext_borderwhite"
+                android:hint="@string/event_create_content_hint"
+                android:textSize="16sp"
+                android:inputType="text|textMultiLine"
+                android:layout_marginTop="3dp"
+                android:singleLine="false"
+                android:gravity="top"
+                android:padding="10dp"
+                android:layout_height="150dp"
+                android:maxLength="100" />
+
+            <TextView
+                android:text="0 / 100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTextCount"
+                android:layout_weight="3.2"
+                android:gravity="right"
+                android:layout_marginTop="5dp"
+                android:paddingRight="2dp" />
+
+            <Button
+                android:text="@string/event_create_selectmajor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_major_button"
+                android:textColor="#FF000000"
+                android:textSize="14sp"
+                android:background="@drawable/main_button_bg"
+                android:layout_marginTop="10dp" />
 
         </LinearLayout>
-    </ScrollView>
-
-    <Button
-        android:text="@string/event_create_selectmajor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/select_major_button"
-        android:textColor="#FF000000"
-        android:textSize="14sp"
-        android:background="@drawable/main_button_bg"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_margin="10dp" />
+        </ScrollView>
 
 </RelativeLayout>

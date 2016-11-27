@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Controller;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.ssumunity.ssuzip_admin.Model.TypefaceUtil;
 
 import java.util.List;
 

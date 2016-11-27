@@ -5,7 +5,7 @@
     android:id="@+id/activity_event_create"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ssumunity.ssuzip_admin.EventCreateTwoActivity"
+    tools:context="com.ssumunity.ssuzip_admin.Activity.EventCreateTwoActivity"
     android:background="@color/colorWhite">
 
     <LinearLayout
@@ -55,6 +55,7 @@
         android:id="@+id/select_building_button"
         android:textColor="#FF000000"
         android:textSize="14sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:background="@drawable/main_button_bg"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"

@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Activity;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,13 +9,17 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.ssumunity.ssuzip_admin.Data.CheckboxItem;
+import com.ssumunity.ssuzip_admin.Controller.CheckboxListviewAdapter;
+import com.ssumunity.ssuzip_admin.Data.CheckedArray;
+import com.ssumunity.ssuzip_admin.Model.DialogUtil;
+import com.ssumunity.ssuzip_admin.R;
+import com.ssumunity.ssuzip_admin.Model.TypefaceUtil;
 
 import java.util.ArrayList;
 
@@ -30,9 +34,10 @@ public class EventCreateTwoActivity extends AppCompatActivity {
     private Button createButton = null;
     private String title = "";
     private String maxPerson = "";
-    private int year;
-    private int month;
-    private int day;
+    private String year;
+    private String month;
+    private String day;
+    private String content = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +53,7 @@ public class EventCreateTwoActivity extends AppCompatActivity {
         TextViewNewFont.setText(getString(R.string.event_create_actionbar_title));
 
         // TextView Color
-        TextViewNewFont.setTextColor(Color.WHITE);
+        TextViewNewFont.setTextColor(getResources().getColor(R.color.actionbar_text_color));
 
         // TextView Gravity : 일단 비활성화 (Center Alignment가 안됨)
         //TextViewNewFont.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -66,10 +71,11 @@ public class EventCreateTwoActivity extends AppCompatActivity {
         setContent();
 
         Intent intent = getIntent();
-        year = intent.getIntExtra("year", 2016);
-        month = intent.getIntExtra("month", 11);
-        day = intent.getIntExtra("day", 23);
+        year = intent.getStringExtra("year");
+        month = intent.getStringExtra("month");
+        day = intent.getStringExtra("day");
         title = intent.getStringExtra("title");
+        content = intent.getStringExtra("content");
         maxPerson = intent.getStringExtra("maxperson");
 
         generateData();
@@ -84,15 +90,30 @@ public class EventCreateTwoActivity extends AppCompatActivity {
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(EventCreateTwoActivity.this, EventCreateThreeActivity.class);
-                intent.putExtra("title", title);
-                intent.putExtra("maxperson", maxPerson);
-                intent.putExtra("year", year);
-                intent.putExtra("month", month);
-                intent.putExtra("day", day);
-                startActivity(intent);
-                overridePendingTransition(R.anim.fade, R.anim.hold);
-                finish();
+
+                int length = CheckedArray.checkArrayParticipate.length;
+                int true_count = 0;
+                for(int i = 0; i < length; ++i) {
+                    if(CheckedArray.checkArrayParticipate[i]) {
+                        true_count++;
+                    }
+                }
+
+                // 아무것도 선택되지 않았을 경우
+                if(true_count < 1) {
+                    DialogUtil.showDialog(EventCreateTwoActivity.this, getString(R.string.event_create_dialog_major_title), getString(R.string.event_create_dialog_major_content), 1, 1);
+                } else {
+                    Intent intent = new Intent(EventCreateTwoActivity.this, EventCreateThreeActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("maxperson", maxPerson);
+                    intent.putExtra("year", year);
+                    intent.putExtra("month", month);
+                    intent.putExtra("day", day);
+                    intent.putExtra("content", content);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.fade, R.anim.hold);
+                    finish();
+                }
             }
         });
     }
@@ -121,6 +142,16 @@ public class EventCreateTwoActivity extends AppCompatActivity {
         createButton = (Button) findViewById(R.id.select_building_button);
         tvMajor = (TextView) findViewById(R.id.tv_participate);
         tvMajor.setTypeface(TypefaceUtil.typeface_m);
+
+        int length = CheckedArray.checkArrayParticipate.length;
+        for( int i = 0; i < length; ++i ) {
+            CheckedArray.checkArrayParticipate[i] = false;
+        }
+
+        length = CheckedArray.checkArrayBuilding.length;
+        for( int i = 0; i < length; ++i ) {
+            CheckedArray.checkArrayBuilding[i] = false;
+        }
     }
 
     @Override

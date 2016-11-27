@@ -1,7 +1,9 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Model;
 
 import android.content.Context;
 import android.graphics.Typeface;
+
+import com.ssumunity.ssuzip_admin.R;
 
 /**
  * Created by Ulnamsong on 2016. 11. 17..

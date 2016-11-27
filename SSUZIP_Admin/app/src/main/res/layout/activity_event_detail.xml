@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ssumunity.ssuzip_admin.Activity.EventDetailActivity"
+    android:background="@color/colorWhite">
+
+    <Button
+        android:text="이벤트 마감하기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/endevent_button"
+        android:background="@drawable/main_button_bg"
+        android:drawableLeft="@drawable/create"
+        android:paddingLeft="10dp"
+        android:paddingRight="35dp"
+        android:textColor="#FF000000"
+        android:textSize="16sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvTitle"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/endevent_button">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/calendar_icon"
+                    android:id="@+id/imageView8"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:text="2016년 11월 26일"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvDate"
+                    android:gravity="center_vertical|start"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:text="진행중"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/status_iv_bg"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:clickable="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/saram"
+                    android:id="@+id/imageView9"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:text="100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCurPerson"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:text="/ 130"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvMaxPerson"
+                    android:gravity="center_vertical|start"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorGrey70" />
+
+                <TextView
+                    android:text="@string/event_myung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_myung"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="1dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="이벤트 내용"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvEventContent"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_EventContent"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorGrey70" />
+
+            <TextView
+                android:text="참가 대상"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tvMajor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="컴퓨터학부"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_Major"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorGrey70" />
+
+            <TextView
+                android:text="대상 건물"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBuilding"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:text="정보과학관"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_Building"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorGrey70" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

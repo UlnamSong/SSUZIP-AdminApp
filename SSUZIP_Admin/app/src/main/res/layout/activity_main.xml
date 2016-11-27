@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ssumunity.ssuzip_admin.MainActivity"
+    tools:context="com.ssumunity.ssuzip_admin.Activity.MainActivity"
     android:background="@color/colorWhite">
 
     <ImageView
@@ -108,7 +108,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/admin_event_btn"
             android:background="@drawable/main_button_bg"
-            android:drawableLeft="@drawable/plus"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableLeft="@drawable/event_manage"
             android:paddingLeft="10dp"
             android:layout_marginTop="10dp"
             android:paddingRight="35dp"
@@ -121,9 +122,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/setting_btn"
             android:background="@drawable/main_button_bg"
-            android:drawableLeft="@drawable/set"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableLeft="@drawable/setting"
             android:layout_marginTop="5dp"
-            android:paddingLeft="12dp"
+            android:paddingLeft="10dp"
             android:paddingRight="38dp"
             android:textColor="#FF505050"
             android:textSize="16sp" />

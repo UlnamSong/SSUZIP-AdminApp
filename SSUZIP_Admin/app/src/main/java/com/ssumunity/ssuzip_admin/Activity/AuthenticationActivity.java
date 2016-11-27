@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Activity;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.ssumunity.ssuzip_admin.Model.DialogUtil;
+import com.ssumunity.ssuzip_admin.R;
+import com.ssumunity.ssuzip_admin.Model.TypefaceUtil;
 
 public class AuthenticationActivity extends AppCompatActivity {
 
@@ -41,7 +45,7 @@ public class AuthenticationActivity extends AppCompatActivity {
         TextViewNewFont.setLayoutParams(layoutparams);
         TextViewNewFont.setText(getString(R.string.auth_title));
 
-        TextViewNewFont.setTextColor(Color.WHITE);
+        TextViewNewFont.setTextColor(getResources().getColor(R.color.actionbar_text_color));
         TextViewNewFont.setTextSize(18);
 
         // Load Typeface font url String ExternalFontPath

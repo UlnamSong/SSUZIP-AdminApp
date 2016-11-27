@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ssumunity.ssuzip_admin.LoginActivity"
+    tools:context="com.ssumunity.ssuzip_admin.Activity.LoginActivity"
     android:background="@color/colorWhite">
 
     <ImageView
@@ -80,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/login_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_marginTop="20dp"
             android:background="@drawable/login_button_bg"
             android:textColor="@color/colorWhite"

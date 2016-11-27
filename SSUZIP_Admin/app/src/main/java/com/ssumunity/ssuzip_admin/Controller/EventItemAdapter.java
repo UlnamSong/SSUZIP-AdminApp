@@ -1,13 +1,11 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Controller;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.res.ColorStateList;
-import android.graphics.Bitmap;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -15,7 +13,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.net.URL;
+import com.ssumunity.ssuzip_admin.Activity.EventDetailActivity;
+import com.ssumunity.ssuzip_admin.Activity.EventListActivity;
+import com.ssumunity.ssuzip_admin.Data.EventData;
+import com.ssumunity.ssuzip_admin.R;
 
 /**
  * Created by Ulnamsong on 2016. 11. 22..
@@ -100,7 +101,18 @@ public class EventItemAdapter extends ArrayAdapter<EventData> {
                 switch(datas[position].eventStatus) {
                     case "0":
                     case "1":
-                        Toast.makeText(myContext, "Details, Position : " + position, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(myContext, "Details, Position : " + position, Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(myContext, EventDetailActivity.class);
+                        intent.putExtra("title", datas[position].title);
+                        intent.putExtra("maxperson", datas[position].totNumber);
+                        intent.putExtra("year", datas[position].year);
+                        intent.putExtra("month", datas[position].month);
+                        intent.putExtra("day", datas[position].day);
+                        intent.putExtra("content", datas[position].content);
+                        intent.putExtra("curperson", datas[position].curNumber);
+
+                        myContext.startActivity(intent);
+                        myContext.overridePendingTransition(R.anim.fade, R.anim.hold);
                         break;
                     
                     case "2":

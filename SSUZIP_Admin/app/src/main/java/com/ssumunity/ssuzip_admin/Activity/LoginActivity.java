@@ -1,14 +1,24 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Activity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.ssumunity.ssuzip_admin.Model.AsteriskPasswordTransformationMethod;
+import com.ssumunity.ssuzip_admin.Model.DialogUtil;
+import com.ssumunity.ssuzip_admin.R;
+import com.ssumunity.ssuzip_admin.Model.TypefaceUtil;
+
+import static com.ssumunity.ssuzip_admin.Model.DialogUtil.activity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -98,6 +108,23 @@ public class LoginActivity extends AppCompatActivity {
 
         etEmail.setTypeface(TypefaceUtil.typeface);
         etPassword.setTypeface(TypefaceUtil.typeface);
+
+        // Lollipop 이상 버전에서의 상단바 아이콘 색상 문제
+        if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            // Do Nothing
+        } else {
+            // StatusBar Set
+            Window window = getWindow();
+
+            // clear FLAG_TRANSLUCENT_STATUS flag:
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
+            // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+
+            // finally change the color
+            window.setStatusBarColor(getResources().getColor(R.color.my_statusbar_color));
+        }
     }
 
     public void onBackPressed() {

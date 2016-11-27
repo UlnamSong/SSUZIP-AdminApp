@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Model;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -8,6 +8,9 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+
+import com.ssumunity.ssuzip_admin.Activity.LoginActivity;
+import com.ssumunity.ssuzip_admin.R;
 
 /**
  * Created by Ulnamsong on 2016. 11. 17..
@@ -19,7 +22,7 @@ public class DialogUtil {
     public static Activity activity;
     public static int resultCode;
 
-    public static void showDialog(Context mContext, String input_title, String input_content, int type, final int commandType){
+    public static void showDialog(final Context mContext, String input_title, String input_content, int type, final int commandType){
 
         activity = (Activity) mContext;
 
@@ -55,6 +58,7 @@ public class DialogUtil {
                                 break;
                             case 3:
                                 // Event Create Activity & Event List Activity
+                                ((Activity) mContext).finish();
                                 break;
                         }
                         dialog.cancel(); // Your custom code

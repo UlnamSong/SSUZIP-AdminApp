@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Controller;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,6 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import com.ssumunity.ssuzip_admin.Data.CheckboxItem;
+import com.ssumunity.ssuzip_admin.Data.CheckedArray;
+import com.ssumunity.ssuzip_admin.R;
 
 /**
  * Created by Ulnamsong on 2016. 11. 23..

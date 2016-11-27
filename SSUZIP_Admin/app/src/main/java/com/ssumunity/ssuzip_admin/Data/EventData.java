@@ -1,4 +1,4 @@
-package com.ssumunity.ssuzip_admin;
+package com.ssumunity.ssuzip_admin.Data;
 
 import android.graphics.Bitmap;
 
@@ -13,5 +13,6 @@ public class EventData {
     public String title = "";
     public String totNumber = "";
     public String curNumber = "";
+    public String content = "";
     public String eventStatus = "";  // 0 : Normal , 1 : Almost End, 2 : End
 }

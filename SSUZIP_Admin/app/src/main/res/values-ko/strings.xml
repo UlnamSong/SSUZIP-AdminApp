@@ -117,6 +117,8 @@
     <string name="event_curevent_text">진행중인 이벤트 : </string>
     <string name="event_totevent_text">전체 이벤트 수 : </string>
     <string name="event_addevent_button">이벤트 생성</string>
+    <string name="event_refresh_button">목록 새로 고침</string>
+    <string name="event_refresh_toast">목록이 새로고침 되었습니다.</string>
     
     <string name="event_detail_button">상세</string>
     <string name="event_result_button">결과</string>
@@ -139,8 +141,12 @@
     <string name="event_create_duedate_hint">마감일을 선택해주세요.</string>
     <string name="event_create_maxperson">최대 인원</string>
     <string name="event_create_maxperson_hint">인원 수를 입력해주세요. 예) 130</string>
+    <string name="event_create_content">이벤트 설명</string>
+    <string name="event_create_content_hint">이벤트에 대한 설명을 입력해주세요.</string>
     <string name="event_create_participate">참가 대상</string>
     <string name="event_create_building">건물 선택</string>
+    <string name="event_create_selectmajor">참가 대상 선택</string>
+    <string name="event_create_selectbuilding">건물 선택하기</string>
     <string name="event_create_button">이벤트 생성하기</string>
 
     <string name="event_create_year">년 </string>
@@ -149,5 +155,25 @@
 
     <string name="event_create_dialog_date_title">날짜 선택 오류</string>
     <string name="event_create_dialog_date_content">오늘 날짜 이후의 날짜로 선택해주세요.</string>
-    
+
+    <string name="event_now_creating">생성중입니다...</string>
+    <string name="event_create_success">이벤트 생성 완료</string>
+
+    <!-- Event Create Dialog -->
+    <string name="event_create_dialog_title_title">이벤트 제목 입력</string>
+    <string name="event_create_dialog_title_content">이벤트 제목을 입력해주세요.</string>
+    <string name="event_create_dialog_maxperson_title">최대 인원 입력</string>
+    <string name="event_create_dialog_maxperson_content">최대 인원을 입력해주세요.</string>
+    <string name="event_create_dialog_content_title">이벤트 설명 입력</string>
+    <string name="event_create_dialog_content_content">이벤트 설명을 입력해주세요.</string>
+
+    <string name="event_create_dialog_major_title">참가 대상 선택</string>
+    <string name="event_create_dialog_major_content">참가 대상을 최소 1개 이상 선택해주세요.</string>
+
+    <string name="event_create_dialog_building_title">대상 건물 선택</string>
+    <string name="event_create_dialog_building_content">대상 건물을 최소 1개 이상 선택해주세요.</string>
+
+    <!-- Event Details -->
+    <string name="event_details_actionbar_title">이벤트 상세</string>
+    <string name="event_details_endevent_button">이벤트 마감하기</string>
 </resources>
