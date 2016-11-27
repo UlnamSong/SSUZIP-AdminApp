@@ -16,7 +16,7 @@
         android:text="이벤트 마감하기"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/endevent_button"
+        android:id="@+id/back_button"
         android:background="@drawable/main_button_bg"
         android:drawableLeft="@drawable/create"
         android:paddingLeft="10dp"
@@ -47,7 +47,7 @@
         android:layout_below="@+id/tvTitle"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_above="@+id/endevent_button">
+        android:layout_above="@+id/back_button">
 
         <LinearLayout
             android:orientation="vertical"

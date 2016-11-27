@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:paddingBottom="3dp"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:text="1위"
+            android:layout_height="match_parent"
+            android:id="@+id/tvRank"
+            android:layout_weight="2"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:text="김태인"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName"
+            android:layout_weight="1.7"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:text="컴퓨터학부"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMajor"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.ssumunity.ssuzip_admin.Activity.EventDetailActivity;
 import com.ssumunity.ssuzip_admin.Activity.EventListActivity;
+import com.ssumunity.ssuzip_admin.Activity.EventResultActivity;
 import com.ssumunity.ssuzip_admin.Data.EventData;
 import com.ssumunity.ssuzip_admin.R;
 
@@ -116,7 +117,16 @@ public class EventItemAdapter extends ArrayAdapter<EventData> {
                         break;
                     
                     case "2":
-                        Toast.makeText(myContext, "Results, Position : " + position, Toast.LENGTH_SHORT).show();
+                        Intent intent2 = new Intent(myContext, EventResultActivity.class);
+                        intent2.putExtra("title", datas[position].title);
+                        intent2.putExtra("year", datas[position].year);
+                        intent2.putExtra("month", datas[position].month);
+                        intent2.putExtra("day", datas[position].day);
+                        intent2.putExtra("content", datas[position].content);
+                        intent2.putExtra("curperson", datas[position].curNumber);
+
+                        myContext.startActivity(intent2);
+                        myContext.overridePendingTransition(R.anim.fade, R.anim.hold);
                         break;
                 }
             }

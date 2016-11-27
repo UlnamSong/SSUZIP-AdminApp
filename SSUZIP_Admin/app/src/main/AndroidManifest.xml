@@ -29,7 +29,11 @@
         <activity android:name=".Activity.EventCreateActivity" />
         <activity android:name=".Activity.EventCreateTwoActivity" />
         <activity android:name=".Activity.EventCreateThreeActivity" />
-        <activity android:name=".Activity.EventDetailActivity"></activity>
+        <activity android:name=".Activity.EventDetailActivity" />
+        <activity android:name=".Activity.EventResultActivity"></activity>
+        <activity
+            android:name=".Activity.PersonInfoPopupActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
     </application>
 
 </manifest>

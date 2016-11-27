@@ -177,4 +177,28 @@
     <!-- Event Details -->
     <string name="event_details_actionbar_title">Event Details</string>
     <string name="event_details_endevent_button">이벤트 마감하기</string>
+    <string name="event_details_major">참가 대상</string>
+    <string name="event_details_building">대상 건물</string>
+
+    <!-- Event Result -->
+    <string name="event_results_backbutton_text">Back</string>
+    <string name="event_results_person_text">참여 인원</string>
+    <string name="event_results_first_rank">1위</string>
+    <string name="event_results_rank_list">순위표</string>
+    <string name="event_results_rank_list_hint">정보를 보려면 리스트 아이템을 터치하세요.</string>
+    <string name="event_results_info">정보</string>
+    <string name="event_results_rank_first_token">st</string>
+    <string name="event_results_rank_second_token">nd</string>
+    <string name="event_results_rank_third_token">rd</string>
+    <string name="event_results_rank_extra_token">th</string>
+    <string name="event_results_actionbar_title">이벤트 결과</string>
+
+    <!-- Event Result Person Info Popup -->
+    <string name="event_popup_name">이름</string>
+    <string name="event_popup_id">학번</string>
+    <string name="event_popup_major">학부(과)</string>
+    <string name="event_popup_gender">성별</string>
+    <string name="event_popup_phone">휴대전화 번호</string>
+    <string name="event_popup_ok">확인</string>
+
 </resources>

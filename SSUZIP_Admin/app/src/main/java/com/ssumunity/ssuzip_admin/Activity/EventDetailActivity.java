@@ -1,7 +1,6 @@
 package com.ssumunity.ssuzip_admin.Activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -137,7 +136,7 @@ public class EventDetailActivity extends AppCompatActivity {
         tv_Building = (TextView) findViewById(R.id.tv_Building);
         tv_Building.setTypeface(TypefaceUtil.typeface);
 
-        endEventBtn = (Button) findViewById(R.id.endevent_button);
+        endEventBtn = (Button) findViewById(R.id.back_button);
         endEventBtn.setTypeface(TypefaceUtil.typeface);
     }
 
