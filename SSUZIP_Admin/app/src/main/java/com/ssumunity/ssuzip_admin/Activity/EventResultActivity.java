@@ -123,7 +123,7 @@ public class EventResultActivity extends AppCompatActivity {
         tvTitle.setText(title);
 
         tvFirstName.setText(rankArray[0].rankName);
-        tvFirstInfo.setText("(" + rankArray[0].rankID + ", " + rankArray[0].rankMajor + ")");
+        tvFirstInfo.setText(rankArray[0].rankID + ", " + rankArray[0].rankMajor);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -28,14 +28,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_name"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:text="TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_name_content"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:layout_marginTop="5dp"
             android:textColor="#FF000000" />
 
@@ -46,14 +46,14 @@
             android:id="@+id/tv_id"
             android:layout_marginTop="10dp"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:text="TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_id_content"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:layout_marginTop="5dp"
             android:textColor="#FF000000" />
 
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_major"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="10dp" />
 
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_major_content"
             android:layout_marginTop="5dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="#FF000000" />
 
         <TextView
@@ -80,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_gender"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="10dp" />
 
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_gender_content"
             android:layout_marginTop="5dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="#FF000000" />
 
         <TextView
@@ -98,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_phone"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="10dp" />
 
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_phone_content"
             android:layout_marginTop="5dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="#FF000000" />
     </LinearLayout>
 

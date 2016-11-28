@@ -5,6 +5,6 @@ package com.ssumunity.ssuzip_admin.Data;
  */
 
 public class CheckedArray {
-    public static boolean[] checkArrayParticipate = new boolean[45];
+    public static boolean[] checkArrayParticipate = new boolean[48];
     public static boolean[] checkArrayBuilding = new boolean[18];
 }

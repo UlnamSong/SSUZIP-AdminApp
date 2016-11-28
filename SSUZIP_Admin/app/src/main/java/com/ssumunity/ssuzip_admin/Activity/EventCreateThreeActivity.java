@@ -203,7 +203,7 @@ public class EventCreateThreeActivity extends AppCompatActivity {
             ans += "[설명]" + "\n";
             ans += content + "\n";
             ans += "\n[참가대상]\n";
-            for(int i = 0; i < 45; ++i) {
+            for(int i = 0; i < CheckedArray.checkArrayParticipate.length; ++i) {
                 if(CheckedArray.checkArrayParticipate[i]) {
                     ans += majors[i] + "\n";
                 }
@@ -211,10 +211,9 @@ public class EventCreateThreeActivity extends AppCompatActivity {
 
             ans += "\n[대상건물]\n";
 
-            for(int i = 0; i < 18; ++i) {
+            for(int i = 0; i < CheckedArray.checkArrayBuilding.length; ++i) {
                 if(CheckedArray.checkArrayBuilding[i]) {
                     ans += buildings[i] + "\n";
-
                 }
             }
 

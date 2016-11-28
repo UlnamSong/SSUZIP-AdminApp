@@ -71,9 +71,6 @@ public class SignupActivity extends AppCompatActivity {
 
         // TextView Color
         TextViewNewFont.setTextColor(getResources().getColor(R.color.actionbar_text_color));
-
-        // TextView Gravity : 일단 비활성화 (Center Alignment가 안됨)
-        //TextViewNewFont.setGravity(Gravity.CENTER_HORIZONTAL);
         TextViewNewFont.setTextSize(18);
 
         // Load Typeface font url String ExternalFontPath
@@ -88,10 +85,6 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(accountValidation()) {
-                    //Log.d(TAG, "onClick: userInfo : " + SignupUserData.userName + ", " + SignupUserData.userStudentNumber);
-                    //Log.d(TAG, "onClick: userInfo : " + SignupUserData.userPassword + ", " + SignupUserData.userPasswordConfirm);
-                    //Log.d(TAG, "onClick: userInfo : " + SignupUserData.userGender + ", " + SignupUserData.userMajor + ", " + SignupUserData.userEmail);
-
                     startActivity(new Intent(SignupActivity.this, AuthenticationActivity.class));
                     overridePendingTransition(R.anim.fade, R.anim.hold);
                     finish();
@@ -100,7 +93,7 @@ public class SignupActivity extends AppCompatActivity {
         });
 
         // Major Spinner
-        str = getResources().getStringArray(R.array.major_list);
+        str = getResources().getStringArray(R.array.signup_major_list);
         majorSpinner = (Spinner)findViewById(R.id.spinner);
         majorSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

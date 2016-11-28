@@ -47,7 +47,7 @@ public class PersonInfoPopupActivity extends Activity {
         Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
 
         int width = (int) (display.getWidth() * 0.8); //Display 사이즈의 70%
-        int height = (int) (display.getHeight() * 0.7);  //Display 사이즈의 70%
+        int height = (int) (display.getHeight() * 0.8);  //Display 사이즈의 70%
 
         getWindow().getAttributes().width = width;
         getWindow().getAttributes().height = height;

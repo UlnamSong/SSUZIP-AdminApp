@@ -191,6 +191,7 @@ public class EventListActivity extends ActionBarActivity {
 
             tempArr.year = "2016";
             int tempInt = (int) ((Math.random() * 11) + 1);
+
             if(tempInt < 10) {
                 tempArr.month = "0" + tempInt + "";
             } else {
@@ -198,17 +199,27 @@ public class EventListActivity extends ActionBarActivity {
             }
 
             tempInt = (int) ((Math.random() * 31) + 1);
+
             if(tempInt < 10) {
                 tempArr.day = "0" + tempInt + "";
             } else {
                 tempArr.day = tempInt + "";
             }
+
             tempArr.title = getString(R.string.event_actionbar_title) + (14 - i);
 
             int temp = (int) (Math.random() * 300);
+            if(temp < 1) {
+                temp += 1;
+            }
+
+            int temp2 = (int) (Math.random() * temp);
+            if(temp2 < 1) {
+                temp2 += 1;
+            }
 
             tempArr.totNumber = temp + "";
-            tempArr.curNumber = (int) (Math.random() * temp) + "";
+            tempArr.curNumber = temp2 + "";
             tempArr.eventStatus = (int) (Math.random() * 3) + "";
             tempArr.content = "BlaBlaBlaContent : " + (14 - i) + "\n";
             eventData.add(tempArr);

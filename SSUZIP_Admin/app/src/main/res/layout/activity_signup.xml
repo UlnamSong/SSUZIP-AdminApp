@@ -155,6 +155,23 @@
             </LinearLayout>
 
             <TextView
+                android:text="@string/signup_major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_major"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spinner"
+                android:background="@drawable/edittext_borderwhite"
+                android:entries="@array/major_list"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
                 android:text="@string/signup_studentnumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -174,23 +191,6 @@
                 android:layout_height="40dp"
                 android:textSize="16sp"
                 android:inputType="number" />
-
-            <TextView
-                android:text="@string/signup_major"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_major"
-                android:textColor="@color/colorPrimary"
-                android:layout_marginTop="10dp"
-                android:textSize="14sp" />
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:id="@+id/spinner"
-                android:background="@drawable/edittext_borderwhite"
-                android:entries="@array/major_list"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp" />
 
             <Button
                 android:text="@string/signup_continuebutton"

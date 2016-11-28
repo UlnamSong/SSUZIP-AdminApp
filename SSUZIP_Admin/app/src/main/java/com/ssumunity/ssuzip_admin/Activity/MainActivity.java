@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     private String[] majorStr = null;
     private int majorIndex = 0;
 
+    // Need Data
+    // JSON : name, major, id, curCount, totCount
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +62,9 @@ public class MainActivity extends AppCompatActivity {
         settingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Settings", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, getString(R.string.service_ready), Toast.LENGTH_SHORT).show();
+                //tartActivity(new Intent(MainActivity.this, SettingActivity.class));
+                //overridePendingTransition(R.anim.fade, R.anim.hold);
             }
         });
     }

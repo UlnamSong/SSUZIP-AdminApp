@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">SSU:ZIP 管理员</string>
 
+    <string name="service_ready">该服务的准备。</string>
+
     <!-- Typeface Path -->
     <string name="typeface_normal">fonts/wt011.ttf</string>
     <string name="typeface_bold">fonts/wt011.ttf</string>
@@ -179,6 +181,8 @@
     <string name="event_details_endevent_button">이벤트 마감하기</string>
     <string name="event_details_major">참가 대상</string>
     <string name="event_details_building">대상 건물</string>
+    <string name="event_details_curtext">Proceeding</string>
+    <string name="event_details_event_contenttitle">Event Contents</string>
 
     <!-- Event Result -->
     <string name="event_results_backbutton_text">Back</string>

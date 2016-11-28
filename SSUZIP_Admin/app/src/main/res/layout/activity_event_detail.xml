@@ -13,7 +13,7 @@
     android:background="@color/colorWhite">
 
     <Button
-        android:text="이벤트 마감하기"
+        android:text="@string/event_details_endevent_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/back_button"
@@ -77,10 +77,10 @@
                     android:id="@+id/tvDate"
                     android:gravity="center_vertical|start"
                     android:layout_marginLeft="15dp"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <Button
-                    android:text="진행중"
+                    android:text="@string/event_details_curtext"
                     android:layout_height="wrap_content"
                     android:id="@+id/button"
                     android:layout_weight="1"
@@ -90,11 +90,13 @@
                     android:textColor="@color/colorPrimary"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:layout_width="60dp"
+                    android:layout_width="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="2dp"
                     android:paddingBottom="2dp"
-                    android:clickable="false" />
+                    android:clickable="false"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp" />
 
             </LinearLayout>
 
@@ -145,7 +147,7 @@
             </LinearLayout>
 
             <TextView
-                android:text="이벤트 내용"
+                android:text="@string/event_details_event_contenttitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvEventContent"
@@ -163,7 +165,7 @@
                 android:textColor="@color/colorGrey70" />
 
             <TextView
-                android:text="참가 대상"
+                android:text="@string/event_details_major"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
@@ -181,7 +183,7 @@
                 android:textColor="@color/colorGrey70" />
 
             <TextView
-                android:text="대상 건물"
+                android:text="@string/event_details_building"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvBuilding"

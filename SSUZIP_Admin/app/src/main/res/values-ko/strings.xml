@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">SSU:ZIP 관리자</string>
 
+    <string name="service_ready">서비스 준비중입니다.</string>
+
     <!-- Typeface Path -->
     <string name="typeface_normal">fonts/NanumSquareOTFRegular.otf</string>
     <string name="typeface_bold">fonts/NanumSquareOTFBold.otf</string>
@@ -48,8 +50,8 @@
     <string name="signup_gender">성별</string>
     <string name="signup_gender_man">남자</string>
     <string name="signup_gender_woman">여자</string>
-    <string name="signup_studentnumber">학번</string>
-    <string name="signup_studentnumberhint">학번을 입력해주세요.</string>
+    <string name="signup_studentnumber">학번/직번</string>
+    <string name="signup_studentnumberhint">학번/직번을 입력해주세요.</string>
     <string name="signup_major">학부(과)</string>
     <string name="signup_continuebutton">계속하기</string>
 
@@ -178,6 +180,8 @@
     <string name="event_details_endevent_button">이벤트 마감하기</string>
     <string name="event_details_major">참가 대상</string>
     <string name="event_details_building">대상 건물</string>
+    <string name="event_details_curtext">진행중</string>
+    <string name="event_details_event_contenttitle">이벤트 내용</string>
 
     <!-- Event Result -->
     <string name="event_results_backbutton_text">뒤로 가기</string>
