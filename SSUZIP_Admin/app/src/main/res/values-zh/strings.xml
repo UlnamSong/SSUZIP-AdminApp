@@ -56,53 +56,53 @@
     <string name="signup_continuebutton">要继续</string>
 
     <!-- Signup Activity Dialog -->
-    <string name="signup_dialog_emailinput_title">Email Input</string>
+    <string name="signup_dialog_emailinput_title">输入您的电子邮件</string>
     <string name="signup_dialog_emailinput_content">请输入您的电子邮件。</string>
 
-    <string name="signup_dialog_password_title">Password Input</string>
+    <string name="signup_dialog_password_title">输入密码</string>
     <string name="signup_dialog_password_content">请输入您的密码。</string>
 
-    <string name="signup_dialog_passwordconfirm_title">Password Confirm Input</string>
+    <string name="signup_dialog_passwordconfirm_title">重新输入密码</string>
     <string name="signup_dialog_passwordconfirm_content">再次输入您的密码。</string>
 
-    <string name="signup_dialog_password_error_title">Password Not Match</string>
-    <string name="signup_dialog_password_error_content">Passwords do not match.</string>
+    <string name="signup_dialog_password_error_title">密码不匹配</string>
+    <string name="signup_dialog_password_error_content">密码不匹配。</string>
 
-    <string name="signup_dialog_name_title">Name Input</string>
+    <string name="signup_dialog_name_title">输入名称</string>
     <string name="signup_dialog_name_content">请输入您的姓名。</string>
 
-    <string name="signup_dialog_studentnumber_title">Student ID Input</string>
-    <string name="signup_dialog_studentnumber_content">请输入您的学生证。</string>
+    <string name="signup_dialog_studentnumber_title">学生ID /员工ID输入</string>
+    <string name="signup_dialog_studentnumber_content">请输入您的学生证/工作人员ID。</string>
 
-    <string name="signup_dialog_emailformat_title">Email Format</string>
-    <string name="signup_dialog_emailformat_content">This is not an email format.</string>
+    <string name="signup_dialog_emailformat_title">电子邮件格式</string>
+    <string name="signup_dialog_emailformat_content">不是电子邮件格式。</string>
 
-    <string name="signup_dialog_gender_title">Sex Selection</string>
-    <string name="signup_dialog_gender_content">Select your sex.</string>
+    <string name="signup_dialog_gender_title">性别选择</string>
+    <string name="signup_dialog_gender_content">请选择您的性别。</string>
 
     <!-- Authentication Activity -->
-    <string name="auth_title">Verification</string>
-    <string name="auth_contenttop">This app is an application that requires</string>
-    <string name="auth_contentmid">user authentication from the operator.</string>
-    <string name="auth_contentbot">Enter the code you have been issued for verification.</string>
-    <string name="auth_accountcode">ACCOUNT CODE</string>
-    <string name="auth_accountcodehint">Enter your account code.</string>
-    <string name="auth_authcode">VERIFICATION CODE</string>
-    <string name="auth_authcodehint">Enter your verification code.</string>
-    <string name="auth_signupbutton">Authenticate and Signup</string>
+    <string name="auth_title">验证</string>
+    <string name="auth_contenttop">此应用程序是一个需要操作员进行</string>
+    <string name="auth_contentmid">用户验证的应用程序。</string>
+    <string name="auth_contentbot">输入您已核发的验证码。</string>
+    <string name="auth_accountcode">帐户代码</string>
+    <string name="auth_accountcodehint">输入您的帐户代码。</string>
+    <string name="auth_authcode">验证码</string>
+    <string name="auth_authcodehint">输入您的验证码。</string>
+    <string name="auth_signupbutton">验证和注册</string>
 
     <!-- Authentication Activity Dialog -->
-    <string name="authentication_dialog_accountcode_title">Account Code Input</string>
-    <string name="authentication_dialog_accountcode_content">Enter your account code.</string>
+    <string name="authentication_dialog_accountcode_title">帐户代码输入</string>
+    <string name="authentication_dialog_accountcode_content">输入您的帐户代码。</string>
 
-    <string name="authentication_dialog_authcode_title">Verification Code Input</string>
-    <string name="authentication_dialog_authcode_content">Enter your verification code.</string>
+    <string name="authentication_dialog_authcode_title">验证码输入</string>
+    <string name="authentication_dialog_authcode_content">输入您的验证码。</string>
 
-    <string name="authentication_dialog_accountcode_error_title">Account Code Error</string>
-    <string name="authentication_dialog_accountcode_error_content">Account Code is not valid.</string>
+    <string name="authentication_dialog_accountcode_error_title">帐户代码错误</string>
+    <string name="authentication_dialog_accountcode_error_content">帐户代码无效。</string>
 
-    <string name="authentication_dialog_authcode_error_title">Verification Code Error</string>
-    <string name="authentication_dialog_authcode_error_content">Verification Code is not valid.</string>
+    <string name="authentication_dialog_authcode_error_title">验证码错误</string>
+    <string name="authentication_dialog_authcode_error_content">验证码无效。</string>
 
     <!-- Main Activity -->
     <string name="main_curevent_text">现在发生的事 : </string>
@@ -120,8 +120,8 @@
     <string name="event_curevent_text">正在发生的事件 : </string>
     <string name="event_totevent_text">总活动 : </string>
     <string name="event_addevent_button">创建活动</string>
-    <string name="event_refresh_button">목록 새로 고침</string>
-    <string name="event_refresh_toast">List Refresh Executed.</string>
+    <string name="event_refresh_button">刷新列表</string>
+    <string name="event_refresh_toast">这份名单已被刷新。</string>
 
     <string name="event_detail_button">更</string>
     <string name="event_result_button">结果</string>
@@ -137,72 +137,72 @@
     <string name="event_list_end_text"> : 期限</string>
 
     <!-- Create Event -->
-    <string name="event_create_actionbar_title">이벤트 생성</string>
-    <string name="event_create_title">이벤트 이름</string>
-    <string name="event_create_title_hint">이벤트 이름을 입력해주세요.</string>
-    <string name="event_create_duedate">마감일</string>
-    <string name="event_create_duedate_hint">마감일을 선택해주세요.</string>
-    <string name="event_create_maxperson">최대 인원</string>
-    <string name="event_create_maxperson_hint">인원 수를 입력해주세요. 예) 130</string>
-    <string name="event_create_content">이벤트 설명</string>
-    <string name="event_create_content_hint">이벤트에 대한 설명을 입력해주세요.</string>
-    <string name="event_create_participate">참가 대상</string>
-    <string name="event_create_building">건물 선택</string>
-    <string name="event_create_selectmajor">참가 대상 선택</string>
-    <string name="event_create_selectbuilding">건물 선택하기</string>
-    <string name="event_create_button">이벤트 생성하기</string>
+    <string name="event_create_actionbar_title">创建活动</string>
+    <string name="event_create_title">事件名称</string>
+    <string name="event_create_title_hint">请输入事件的名称。</string>
+    <string name="event_create_duedate">截止日期</string>
+    <string name="event_create_duedate_hint">请选择期限。</string>
+    <string name="event_create_maxperson">睡</string>
+    <string name="event_create_maxperson_hint">请输入人员的数量。例）130</string>
+    <string name="event_create_content">事件描述</string>
+    <string name="event_create_content_hint">请输入事件的描述。</string>
+    <string name="event_create_participate">谁应该参加</string>
+    <string name="event_create_building">选择建筑</string>
+    <string name="event_create_selectmajor">参与者选择</string>
+    <string name="event_create_selectbuilding">选择建筑</string>
+    <string name="event_create_button">创建活动</string>
 
     <string name="event_create_year">年 </string>
     <string name="event_create_month">月 </string>
     <string name="event_create_day">日 </string>
 
-    <string name="event_create_dialog_date_title">날짜 선택 오류</string>
-    <string name="event_create_dialog_date_content">오늘 날짜 이후의 날짜로 선택해주세요.</string>
+    <string name="event_create_dialog_date_title">日期错误</string>
+    <string name="event_create_dialog_date_content">请选择今天的日期之后的日期。</string>
 
-    <string name="event_now_creating">이벤트 생성중입니다...</string>
-    <string name="event_create_success">이벤트 생성 완료</string>
+    <string name="event_now_creating">此事件产生的。。。</string>
+    <string name="event_create_success">事件生成完成</string>
 
     <!-- Event Create Dialog -->
-    <string name="event_create_dialog_title_title">이벤트 제목 입력</string>
-    <string name="event_create_dialog_title_content">이벤트 제목을 입력해주세요.</string>
-    <string name="event_create_dialog_maxperson_title">최대 인원 입력</string>
-    <string name="event_create_dialog_maxperson_content">최대 인원을 입력해주세요.</string>
-    <string name="event_create_dialog_content_title">이벤트 설명 입력</string>
-    <string name="event_create_dialog_content_content">이벤트 설명을 입력해주세요.</string>
+    <string name="event_create_dialog_title_title">输入事件的标题</string>
+    <string name="event_create_dialog_title_content">请输入事件的标题。</string>
+    <string name="event_create_dialog_maxperson_title">睡输入</string>
+    <string name="event_create_dialog_maxperson_content">请输入您的最大值。</string>
+    <string name="event_create_dialog_content_title">输入事件描述</string>
+    <string name="event_create_dialog_content_content">请输入事件的描述。</string>
 
-    <string name="event_create_dialog_major_title">참가 대상 선택</string>
-    <string name="event_create_dialog_major_content">참가 대상을 최소 1개 이상 선택해주세요.</string>
+    <string name="event_create_dialog_major_title">参与者选择</string>
+    <string name="event_create_dialog_major_content">请至少选择一个或多个参与者。</string>
 
-    <string name="event_create_dialog_building_title">대상 건물 선택</string>
-    <string name="event_create_dialog_building_content">대상 건물을 최소 1개 이상 선택해주세요.</string>
+    <string name="event_create_dialog_building_title">选择目标建设</string>
+    <string name="event_create_dialog_building_content">请选择至少一个目标建筑。</string>
 
     <!-- Event Details -->
-    <string name="event_details_actionbar_title">Event Details</string>
-    <string name="event_details_endevent_button">이벤트 마감하기</string>
-    <string name="event_details_major">참가 대상</string>
-    <string name="event_details_building">대상 건물</string>
-    <string name="event_details_curtext">Proceeding</string>
-    <string name="event_details_event_contenttitle">Event Contents</string>
+    <string name="event_details_actionbar_title">活动详情</string>
+    <string name="event_details_endevent_button">活动截止日期</string>
+    <string name="event_details_major">谁应该参加</string>
+    <string name="event_details_building">建设目标</string>
+    <string name="event_details_curtext">进行</string>
+    <string name="event_details_event_contenttitle">活动信息</string>
 
     <!-- Event Result -->
-    <string name="event_results_backbutton_text">Back</string>
-    <string name="event_results_person_text">참여 인원</string>
-    <string name="event_results_first_rank">1위</string>
-    <string name="event_results_rank_list">순위표</string>
-    <string name="event_results_rank_list_hint">정보를 보려면 리스트 아이템을 터치하세요.</string>
-    <string name="event_results_info">정보</string>
-    <string name="event_results_rank_first_token">st</string>
-    <string name="event_results_rank_second_token">nd</string>
-    <string name="event_results_rank_third_token">rd</string>
-    <string name="event_results_rank_extra_token">th</string>
-    <string name="event_results_actionbar_title">이벤트 결과</string>
+    <string name="event_results_backbutton_text">回到顶端</string>
+    <string name="event_results_person_text">参加人数</string>
+    <string name="event_results_first_rank">1等</string>
+    <string name="event_results_rank_list">排名</string>
+    <string name="event_results_rank_list_hint">要查看信息，触摸列表项。</string>
+    <string name="event_results_info">信息</string>
+    <string name="event_results_rank_first_token">等</string>
+    <string name="event_results_rank_second_token">等</string>
+    <string name="event_results_rank_third_token">等</string>
+    <string name="event_results_rank_extra_token">等</string>
+    <string name="event_results_actionbar_title">比赛结果</string>
 
     <!-- Event Result Person Info Popup -->
-    <string name="event_popup_name">이름</string>
-    <string name="event_popup_id">학번</string>
-    <string name="event_popup_major">학부(과)</string>
-    <string name="event_popup_gender">성별</string>
-    <string name="event_popup_phone">휴대전화 번호</string>
-    <string name="event_popup_ok">확인</string>
+    <string name="event_popup_name">名</string>
+    <string name="event_popup_id">学生证</string>
+    <string name="event_popup_major">主要</string>
+    <string name="event_popup_gender">性别</string>
+    <string name="event_popup_phone">电话性爱</string>
+    <string name="event_popup_ok">确认</string>
 
 </resources>

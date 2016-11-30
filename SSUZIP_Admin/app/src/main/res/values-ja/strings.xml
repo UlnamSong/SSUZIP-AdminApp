@@ -72,8 +72,8 @@
     <string name="signup_dialog_name_title">名前入力</string>
     <string name="signup_dialog_name_content">名前を入力してください。</string>
 
-    <string name="signup_dialog_studentnumber_title">学籍番号入力</string>
-    <string name="signup_dialog_studentnumber_content">学籍番号を入力してください。</string>
+    <string name="signup_dialog_studentnumber_title">年度入学生/ジクボン入力</string>
+    <string name="signup_dialog_studentnumber_content">年度入学生/ジクボンを入力してください。</string>
 
     <string name="signup_dialog_emailformat_title">Eメール形式</string>
     <string name="signup_dialog_emailformat_content">Eメールの形式がありません。</string>

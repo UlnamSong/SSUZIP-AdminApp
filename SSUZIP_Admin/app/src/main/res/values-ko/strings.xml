@@ -71,8 +71,8 @@
     <string name="signup_dialog_name_title">이름 입력</string>
     <string name="signup_dialog_name_content">이름을 입력해주세요.</string>
 
-    <string name="signup_dialog_studentnumber_title">학번 입력</string>
-    <string name="signup_dialog_studentnumber_content">학번을 입력해주세요.</string>
+    <string name="signup_dialog_studentnumber_title">학번/직번 입력</string>
+    <string name="signup_dialog_studentnumber_content">학번/직번을 입력해주세요.</string>
 
     <string name="signup_dialog_emailformat_title">이메일 형식</string>
     <string name="signup_dialog_emailformat_content">이메일 형식이 아닙니다.</string>

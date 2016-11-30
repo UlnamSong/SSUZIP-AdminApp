@@ -110,7 +110,7 @@ public class SignupActivity extends AppCompatActivity {
         MySpinnerAdapter adapter = new MySpinnerAdapter(
                 this,
                 R.layout.support_simple_spinner_dropdown_item,
-                Arrays.asList(getResources().getStringArray(R.array.major_list))
+                Arrays.asList(getResources().getStringArray(R.array.signup_major_list))
         );
 
         majorSpinner.setAdapter(adapter);

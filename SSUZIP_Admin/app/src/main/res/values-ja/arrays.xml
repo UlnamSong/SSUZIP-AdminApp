@@ -46,78 +46,78 @@
         <item>メディア経営学科</item>
         <item>芸術創作学部</item>
         <item>スポーツ学部</item>
-        <item>Faculty (Non-Student)</item>
-        <item>Middle/High School Student</item>
-        <item>Outside Visitors</item>
+        <item>教職員</item>
+        <item>中高生</item>
+        <item>外部の訪問者</item>
     </string-array>
 
     <string-array name="signup_major_list">
-        <item>기독교학과</item>
-        <item>국어국문학과</item>
-        <item>영어영문학과</item>
-        <item>독어독문학과</item>
-        <item>불어불문학과</item>
-        <item>중어중문학과</item>
-        <item>일어일문학과</item>
-        <item>철학과</item>
-        <item>사학과</item>
-        <item>수학과</item>
-        <item>물리학과</item>
-        <item>화학과</item>
-        <item>정보통계보험수리학과</item>
-        <item>의생명시스템학부</item>
-        <item>법학과</item>
-        <item>국제법무학과</item>
-        <item>사회복지학부</item>
-        <item>행정학부</item>
-        <item>정치외교학과</item>
-        <item>정보사회학과</item>
-        <item>언론홍보학과</item>
-        <item>평생교육학과</item>
-        <item>경제학과</item>
-        <item>글로벌통상학과</item>
-        <item>금융경제학과</item>
-        <item>국제무역학과</item>
-        <item>경영학부</item>
-        <item>벤처중소기업학과</item>
-        <item>회계학과</item>
-        <item>벤처경영학과</item>
-        <item>금융학부</item>
-        <item>화학공학과</item>
-        <item>유기신소재파이버공학과</item>
-        <item>전기공학부</item>
-        <item>기계공학과</item>
-        <item>산업정보시스템공학과</item>
-        <item>건축학부</item>
-        <item>컴퓨터학부</item>
-        <item>전자정보공학부</item>
-        <item>글로벌미디어학부</item>
-        <item>소프트웨어학부</item>
-        <item>스마트시스템소프트웨어학과</item>
-        <item>미디어경영학과</item>
-        <item>예술창작학부</item>
-        <item>스포츠학부</item>
-        <item>교직원 (학생아님)</item>
+        <item>クリスチャン学科</item>
+        <item>国語国文学科</item>
+        <item>英語英文学科</item>
+        <item>ドクオドクムン学科</item>
+        <item>フランス語フランス文学科</item>
+        <item>中語中文学科</item>
+        <item>日語日文学科</item>
+        <item>哲学科</item>
+        <item>史学科</item>
+        <item>数学科</item>
+        <item>物理学科</item>
+        <item>化学科</item>
+        <item>情報統計保険数理学科</item>
+        <item>医生命システム学部</item>
+        <item>法学科</item>
+        <item>国際法務学科</item>
+        <item>社会福祉学部</item>
+        <item>行政学部</item>
+        <item>政治外交学科</item>
+        <item>情報社会学科</item>
+        <item>広報部</item>
+        <item>生涯教育学科</item>
+        <item>経済学科</item>
+        <item>グローバル通商学科</item>
+        <item>金融経済学科</item>
+        <item>国際貿易学科</item>
+        <item>経営学部</item>
+        <item>ベンチャー中小企業学科</item>
+        <item>会計学科</item>
+        <item>ベンチャー経営学科</item>
+        <item>金融学部</item>
+        <item>化学工学科</item>
+        <item>有機新素材ファイバー工学科</item>
+        <item>電気工学部</item>
+        <item>機械工学科</item>
+        <item>産業情報システム工学科</item>
+        <item>建築学部</item>
+        <item>コンピュータ学部</item>
+        <item>電子情報工学部</item>
+        <item>グローバルメディア学部</item>
+        <item>ソフトウェア学部</item>
+        <item>スマートシステムソフトウェア学科</item>
+        <item>メディア経営学科</item>
+        <item>芸術創作学部</item>
+        <item>スポーツ学部</item>
+        <item>教職員</item>
     </string-array>
 
     <string-array name="building_list">
-        <item>ベアードホール</item>
-        <item>ギョンサングァン</item>
-        <item>文化館</item>
-        <item>安益泰記念館</item>
-        <item>荊南工学館</item>
-        <item>教育館</item>
-        <item>白馬館</item>
-        <item>韓景職記念館</item>
-        <item>信陽管</item>
-        <item>ベンチャー中小企業センター</item>
-        <item>真理館</item>
-        <item>チョ晩植記念館</item>
-        <item>韓国キリスト教博物館</item>
-        <item>中央図書館</item>
+        <item>Baird Hall</item>
+        <item>Gyeongsang Hall</item>
+        <item>Munhwa Hall</item>
+        <item>Ahn Eak Tai Memorial Hall</item>
+        <item>Hyungnam Memorial Engineering Building</item>
+        <item>Education Hall</item>
+        <item>White Horse Hall</item>
+        <item>Han Kyung Zik Memorial Hall</item>
+        <item>Sinyang Hall</item>
+        <item>Venture Small and Medium Business Center</item>
+        <item>Veritas Hall</item>
+        <item>Jo Man Sik Memorial Hall</item>
+        <item>Korea Christian Museum</item>
+        <item>Central Library</item>
         <item>Residence Hall</item>
-        <item>電算管</item>
-        <item>未来館</item>
-        <item>情報科学館</item>
+        <item>Computer Science Hall</item>
+        <item>Vision Hall</item>
+        <item>Information Science Building</item>
     </string-array>
 </resources>

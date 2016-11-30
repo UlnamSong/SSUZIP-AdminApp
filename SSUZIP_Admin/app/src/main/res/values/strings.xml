@@ -71,8 +71,8 @@
     <string name="signup_dialog_name_title">Name Input</string>
     <string name="signup_dialog_name_content">Enter your name.</string>
 
-    <string name="signup_dialog_studentnumber_title">Student ID Input</string>
-    <string name="signup_dialog_studentnumber_content">Enter your student id.</string>
+    <string name="signup_dialog_studentnumber_title">Student/Employee ID Input</string>
+    <string name="signup_dialog_studentnumber_content">Enter your student/employee id.</string>
 
     <string name="signup_dialog_emailformat_title">Email Format</string>
     <string name="signup_dialog_emailformat_content">This is not an email format.</string>
